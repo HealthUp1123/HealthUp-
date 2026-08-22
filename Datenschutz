@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutz — Health+</title>
+  <meta name="description" content="Datenschutzerklärung Health+: Auswertung lokal, Challenges über deine Apple-iCloud. Kein Tracking.">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><img src="images/logo.jpg" alt="">Health+</a>
+      <nav class="links">
+        <a href="index.html">Start</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap page">
+    <article class="prose">
+      <p class="kicker">Stand 22. August 2026</p>
+      <h1>Datenschutz</h1>
+      <p><strong>Grundsatz:</strong> Health+ wertet deine Gesundheit lokal auf dem Gerät aus. Sobald du dich anmeldest, nutzt Health+ ausschließlich deine Apple-iCloud (CloudKit) — privat für den Geräte-Sync und sozial nur für Challenges. Es gibt keine eigenen Server, kein Tracking, keine Werbenetzwerke.</p>
+
+      <h2>1. Verantwortlicher</h2>
+      <p>Anbieter der App <strong>Health+</strong> (iOS / watchOS) ist Ahmet Uprak. Support: <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a>.</p>
+      <p>Apple stellt HealthKit, iCloud/CloudKit, Sign in with Apple, Push-Benachrichtigungen, WeatherKit (optional) und Game Center (optional) bereit. Dafür gelten zusätzlich Apples Bedingungen.</p>
+
+      <h2>2. Kein Tracking</h2>
+      <ul>
+        <li>Kein Tracking im Sinne von Apple.</li>
+        <li>Keine Werbenetzwerke, keine Analyse-SDKs Dritter, kein Verkauf von Daten.</li>
+        <li>Diese Website setzt keine Cookies und lädt keine Fremdskripte.</li>
+      </ul>
+
+      <h2>3. Rechtsgrundlagen (DSGVO)</h2>
+      <ul>
+        <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a, Art. 9 Abs. 2 lit. a): Apple Health, grober Standort für Wetter, optionales Schreiben von Schlafphasen durch die Watch, optionale Check-ins.</li>
+        <li><strong>Vertrag / App-Funktion</strong> (Art. 6 Abs. 1 lit. b): Anmeldung, Challenges, Freundescode, Leaderboard, Geräte-Sync.</li>
+        <li><strong>Berechtigtes Interesse</strong> (Art. 6 Abs. 1 lit. f): Betriebssicherheit, lokale Caches — ohne Profiling.</li>
+      </ul>
+      <p>Einwilligungen widerrufst du in den iOS-Einstellungen. Ohne Standort bleibt die App nutzbar. Ohne Health keine Scores. Ohne Anmeldung keine Liga.</p>
+
+      <h2>4. Was lokal bleibt</h2>
+      <p>Ringe, Coaching, Schlaf, Körper, Stress, biologisches Alter entstehen auf dem Gerät.</p>
+      <h3>4.1 Apple Health — Lesen, iPhone</h3>
+      <p>Nur nach Freigabe, nur Typen die Health+ anzeigt: Schritte, aktive Energie, Trainingsminuten, Distanz, Etagen, Stehstunden; Schlafanalyse; HRV, Ruhepuls, Herzfrequenz im Schlaffenster; Atemfrequenz, SpO₂, VO₂max, Körpertemperatur, optional Handgelenktemperatur; Größe, Gewicht, Körperfett, Magermasse; Geburtsdatum und biologisches Geschlecht (oder manuell im Profil).</p>
+      <p>Kein EKG, keine Ernährung, kein Sehvermögen. Das iPhone schreibt nichts nach Apple Health.</p>
+      <h3>4.2 Apple Watch</h3>
+      <p>Optional: Schlafphasen (Wach, Leicht/Core, Tief, REM) nach Apple Health. Glance (Ringe, Rang) kommt vom iPhone-Snapshot auf dem Gerät.</p>
+      <h3>4.3 Gerät</h3>
+      <ul>
+        <li>Einstellungen, Sprache, Erscheinungsbild, Onboarding</li>
+        <li>Tageswerte und kompakter Verlauf (bis 365 Tage) in geschützten App-Dateien</li>
+        <li>Coach-Feedback und optionale Geist-/Leben-Einträge nur lokal</li>
+        <li>Kennung, Name, Geburtstag in der Keychain (gerätgebunden)</li>
+        <li>Profilbild lokal; in der Liga zusätzlich iCloud</li>
+        <li>App Group für Widgets und Watch (Ringe, Rang, Titel — keine Rohsamples)</li>
+        <li>Mitteilungs-Präferenzen</li>
+      </ul>
+      <p>Export (JSON-Historie, PDF) startest du selbst.</p>
+
+      <h2>5. Was in deine iCloud geht</h2>
+      <p>Nur mit Apple-Anmeldung. Health+ betreibt keine eigene Cloud.</p>
+      <h3>5.1 Privat (nur du)</h3>
+      <p>Zusammenfassungs-Snapshot für den Gerätewechsel. Private CloudKit-Datenbank, nur für den Ersteller lesbar.</p>
+      <h3>5.2 Liga / Challenges</h3>
+      <p>Nutzer-ID, Anzeigename, Freundescode, optionales Profilbild; Anfragen und Freundschaften; Challenge-Titel, Zeitraum, Teilnehmer, Schlaf an/aus; Einladungen; Tages-Gesamtpunkte, Rang, Lifetime-Siege.</p>
+      <p>Mitspieler sehen Name, Bild, Rang und Summe — nicht Schlafphasen, HRV, Schritte, Ruhepuls, Gewicht.</p>
+
+      <h2>6. Sign in with Apple</h2>
+      <p>Kennung in der Keychain. Name. E-Mail nur, wenn Apple sie beim ersten Mal liefert; keine Kontaktliste. Ohne Konto: Scores lokal, keine Liga.</p>
+
+      <h2>7. Standort und Wetter</h2>
+      <p>Optional, ungefähr, nur WeatherKit, abschaltbar unter Profil → Optionen.</p>
+
+      <h2>8. Mitteilungen, Widgets, Live Activity, Game Center</h2>
+      <p>Push zu Liga-Ereignissen ohne Vitalwerte. Widgets und Live Activity auf dem Gerät. Game Center nur bei dortiger Anmeldung, ohne Health-Rohdaten.</p>
+
+      <h2>9. Coaching</h2>
+      <p>On-device, kein Chatbot, kein externes KI-Konto. Feedback bleibt lokal.</p>
+
+      <h2>10. Löschen</h2>
+      <p>Profil → Account &amp; Daten löschen entfernt Liga-Daten, privaten Sync und lokale Anmeldung. Apple-Health-Rohwerte steuerst du in der Health-App.</p>
+
+      <h2>11. Rechte</h2>
+      <p>Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit, Widerspruch, Widerruf. Beschwerde bei einer Aufsichtsbehörde. Kontakt: <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a>.</p>
+
+      <h2>12. Kein Medizinprodukt</h2>
+      <p>Orientierung und Sport mit Freunden. Keine Diagnose, keine Behandlung.</p>
+
+      <h2>13. Kinder</h2>
+      <p>Nicht für Kinder unter 16 Jahren (bzw. dem höheren lokalen Mindestalter für Health-Daten).</p>
+
+      <h2>14. Änderungen</h2>
+      <p>Es gilt die hier ausgewiesene Fassung.</p>
+
+      <hr style="border:0;border-top:1px solid var(--line);margin:2.5em 0">
+      <p lang="en"><strong>English summary.</strong> Scores are calculated on your device. Signed-in features use your Apple iCloud only — private device sync and challenge totals (name, avatar, points), never vitals. No Health+ servers, no tracking. Full details in German above. Support: healthplus.support.feedback@gmail.com</p>
+    </article>
+  </div>
+
+  <div class="wrap">
+    <footer>
+      <span>© 2026 Ahmet Uprak · Health+</span>
+      <span><a href="index.html">Start</a> · <a href="support.html">Support</a></span>
+    </footer>
+  </div>
+</body>
+</html>
