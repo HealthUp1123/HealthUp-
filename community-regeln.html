@@ -32,7 +32,7 @@
         <h1>Liga und Community-Regeln</h1>
         <p class="stand">Stand: 1. November 2026 · App-Version 0.1.5</p>
 
-        <p>Die Liga soll Spaß machen und motivieren. Dafür gelten diese Regeln. Sie beschreiben, wie die App heute rechnet. Die Liga ist ab 16 Jahren. Derzeit trittst du der Liga ohne eigenen Einwilligungsdialog bei, und die App fragt dein Alter nicht ab. Mit dem Beitritt werden deine Tagespunkte für andere sichtbar. Mit dem nächsten App-Update bestätigst du beim Beitritt, dass du mindestens 16 bist, wählst deinen Anzeigenamen (gern ein Pseudonym) und willigst ausdrücklich ein, dass deine Tagespunkte für andere sichtbar werden. Beenden kannst du die Teilnahme jederzeit, indem du die Liga verlässt oder dein Konto löschst. <!-- UPDATE nach App-Update: Beitrittsdialog mit Einwilligung, Namenswahl und Bestätigung mindestens 16 als heute vorhanden beschreiben --></p>
+        <p>Die Liga soll Spaß machen und motivieren. Dafür gelten diese Regeln. Sie beschreiben, wie die App heute rechnet. Die Liga ist ab 16 Jahren. Derzeit trittst du der Liga ohne eigenen Einwilligungsdialog bei, und die App fragt dein Alter nicht ab. Mit dem Beitritt werden deine Tagespunkte für andere sichtbar. Mit dem nächsten App-Update bestätigst du beim Beitritt, dass du mindestens 16 bist, wählst deinen Anzeigenamen (gern ein Pseudonym) und willigst ausdrücklich ein, dass deine Tagespunkte für andere sichtbar werden. Beenden kannst du die Teilnahme jederzeit, indem du dein Konto löschst. Mit dem nächsten App-Update kannst du auch nur die Liga verlassen. <!-- UPDATE nach App-Update: „indem du die Liga verlässt oder dein Konto löschst“ --> <!-- UPDATE nach App-Update: Beitrittsdialog mit Einwilligung, Namenswahl und Bestätigung mindestens 16 als heute vorhanden beschreiben --></p>
 
         <nav class="toc" aria-label="Inhalt dieser Seite">
           <strong>Inhalt</strong>
@@ -51,25 +51,27 @@
         <h2 id="ablauf">1. Ablauf einer Runde</h2>
         <ul>
           <li><strong>Arena:</strong> die offene Wochen-Runde für alle. Sie läuft von Montag 0:00 Uhr bis Sonntag 23:59 Uhr, Zeitzone Europe/Berlin. Anmelden kannst du dich bis zum Start am Montag. In der Arena wird dein Name gekürzt angezeigt.</li>
-          <li><strong>Freunde-Runde:</strong> sieben Tage mit Freunden. Freunde fügst du mit ihrem sechsstelligen Freundescode hinzu.</li>
+          <li><strong>Freunde-Runde:</strong> sieben Tage mit Freunden. Freunde fügst du mit ihrem sechsstelligen Freundescode hinzu. Derzeit legt die Person, die die Runde startet, fest, ob Schlaf mitzählt. Mit dem nächsten App-Update zählt Schlaf nicht mehr. <!-- UPDATE nach App-Update: die beiden Sätze zum Schlaf streichen --></li>
           <li>Für die Liga brauchst du „Mit Apple anmelden“.</li>
         </ul>
 
         <h2 id="punkte">2. Punkte</h2>
         <p>Pro Tag gibt es höchstens <strong>100 Punkte</strong>, pro Runde also höchstens 700. Die Punkte rechnet dein iPhone aus deinen Apple-Health-Daten.</p>
+        <!-- UPDATE nach App-Update: Spalte „Freunde-Runde mit Schlaf“ und Zeile „Schlaf“ entfernen, Spalte „Arena und Freunde-Runde ohne Schlaf“ umbenennen in „Punkte in Arena und Freunde-Runde“ -->
         <div class="table-wrap">
           <table>
             <caption>Punkte pro Tag</caption>
-            <thead><tr><th scope="col">Baustein</th><th scope="col">Punkte in Arena und Freunde-Runde</th></tr></thead>
+            <thead><tr><th scope="col">Baustein</th><th scope="col">Arena und Freunde-Runde ohne Schlaf</th><th scope="col">Freunde-Runde mit Schlaf</th></tr></thead>
             <tbody>
-              <tr><td>Check-in in der App</td><td>5</td></tr>
-              <tr><td>Schritte</td><td>bis 40 (volle Punkte bei 20.000 Schritten) und 10 Bonus</td></tr>
-              <tr><td>Training</td><td>bis 35 (volle Punkte bei 60 Minuten) und 10 Bonus</td></tr>
-              <tr><th scope="row">Höchstens</th><td>100</td></tr>
+              <tr><td>Check-in in der App</td><td>5</td><td>5</td></tr>
+              <tr><td>Schritte</td><td>bis 40 (volle Punkte bei 20.000 Schritten) und 10 Bonus</td><td>bis 40 (volle Punkte bei 30.000 Schritten)</td></tr>
+              <tr><td>Training</td><td>bis 35 (volle Punkte bei 60 Minuten) und 10 Bonus</td><td>bis 30</td></tr>
+              <tr><td>Schlaf</td><td>zählt nicht</td><td>bis 25 (volle Punkte bei 7 bis 9 Stunden)</td></tr>
+              <tr><th scope="row">Höchstens</th><td>100</td><td>100</td></tr>
             </tbody>
           </table>
         </div>
-        <p>Die Tagespunkte sind Aktivitätspunkte aus Check-in, Schritten und Training. Derzeit kann eine Freunde-Runde noch so gestartet werden, dass Schlaf mitzählt. Dann gelten dort andere Werte. Mit dem nächsten App-Update zählt Schlaf in keiner Runde mehr. <!-- UPDATE nach App-Update: Übergangssätze „Derzeit … Schlaf …“ und „Mit dem nächsten App-Update …“ ersetzen durch „Schlaf zählt nicht.“ --></p>
+        <p>Die Tagespunkte sind Aktivitätspunkte aus Schritten und Training, dazu einige Punkte für den Check-in in der App. Derzeit kann in Freunde-Runden mit Schlaf auch Schlaf einfließen. Mit dem nächsten App-Update zählt Schlaf nicht mehr. <!-- UPDATE nach App-Update: nur noch „Schlaf zählt nicht.“ --></p>
         <p>Die App lädt nur die Tagespunkte hoch, nicht deine Schritte, Minuten oder Schlafdauer. Gibt es für einen Tag mehrere Uploads, zählt der höchste gültige Wert.</p>
 
         <h2 id="wertung">3. Wertung und Gewinner</h2>
