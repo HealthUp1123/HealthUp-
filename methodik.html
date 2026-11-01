@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Methodik · HealthUp+</title>
-  <meta name="description" content="So rechnet HealthUp+: Erholung, Belastung, Schlaf, Stress, Körper und biologisches Alter mit Formeln, Quellen und klarer Kennzeichnung von Eigenentwicklung und Literatur.">
+  <meta name="description" content="So rechnet HealthUp+: Erholung, Belastung, Schlaf, Stress, Körper und Fitnessalter mit Formeln, Quellen und klarer Kennzeichnung von Eigenentwicklung und Literatur.">
   <meta name="theme-color" content="#071433">
   <link rel="icon" href="images/logo.jpg">
   <link rel="apple-touch-icon" href="images/logo.jpg">
@@ -51,7 +51,7 @@
             <li><a href="#belastung">Belastung und Körperenergie</a></li>
             <li><a href="#schlaf">Schlaf</a></li>
             <li><a href="#stress">Stress und Vitalwerte</a></li>
-            <li><a href="#koerper">Körper und biologisches Alter</a></li>
+            <li><a href="#koerper">Körper und Fitnessalter</a></li>
             <li><a href="#ernaehrung">Ernährung</a></li>
             <li><a href="#literatur">Literatur</a></li>
           </ol>
@@ -85,32 +85,32 @@
           <li>Regelmäßigkeit als Sleep Regularity Index: Phillips et al. 2017, Windred et al. 2024 <span class="tag tag-lit">literaturbasiert</span></li>
           <li>Empfohlene Schlafdauer: Hirshkowitz et al. 2015 <span class="tag tag-lit">literaturbasiert</span></li>
         </ul>
-        <h3>Schlafdaten und Schlafphasen</h3>
-        <p>Schlafzeiten und Schlafphasen (Wach, Kern, Tief, REM) liest HealthUp+ direkt aus Apple Health, zum Beispiel von deiner Apple Watch. HealthUp+ schätzt derzeit keine eigenen Schlafphasen.</p>
+        <h3>Schlafdaten und Schlafphasen <span class="tag tag-own">Eigenentwicklung</span></h3>
+        <p>Schlafzeiten und Schlafphasen liest HealthUp+ aus Apple Health. Wenn keine Phasen vorhanden sind, schätzt die App sie mit einem eigenen Modell auf dem Gerät. Diese Schätzung ist nicht klinisch geprüft. Läuft die HealthUp+ App auf deiner Apple Watch, schätzt die Watch die Phasen (Wach, Kern, Tief, REM) aus Bewegung und Puls und speichert sie in Apple Health. <!-- TODO Code: Wenn das eigene Schlafmodell aus der App entfernt ist (Jurist Lieferung 2, Punkt 17), ersetzen durch: Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ schätzt keine eigenen Schlafphasen. --></p>
 
         <h2 id="stress">4. Stress und Vitalwerte</h2>
         <h3>Stress-Tageswert <span class="tag tag-own">Eigenentwicklung</span></h3>
-        <p>Eine Schätzung aus Erholung, Belastung, HRV und Ruhepuls im Vergleich zu deiner Basis, auf einer Skala von 8 bis 88. Im Tagesverlauf nutzt die App den Puls über Ruhe in 15-Minuten-Blöcken und lässt Schlaf, Training und Gehen weg. Der Wert ist nicht validiert und misst keinen Stress, sondern schätzt ihn.</p>
+        <p>Eine Schätzung aus Erholung, Belastung, HRV und Ruhepuls im Vergleich zu deiner Basis, auf einer Skala von 8 bis 88. Im Tagesverlauf nutzt die App den Puls über Ruhe in 15-Minuten-Blöcken und lässt Schlaf, Training und Gehen weg. Der Wert ist nicht validiert und misst keinen Stress, sondern schätzt ihn. Den Stressverlauf über den Tag schätzt ein kleines Modell auf dem Gerät. Wir haben es mit simulierten Daten entwickelt, nicht mit echten Messungen von Menschen unter Stress. Es ist nicht klinisch geprüft.</p>
         <h3>Persönlicher Normbereich <span class="tag tag-own">Eigenentwicklung</span></h3>
         <p>Für Vitalwerte zeigt die App deinen üblichen Bereich: Mittelwert plus oder minus 1,5 Standardabweichungen, mindestens 3 Messwerte.</p>
         <h3>Puls-Erholung nach einer Minute <span class="tag tag-lit">literaturbasiert</span></h3>
-        <p>Ein Abfall von 12 Schlägen oder weniger in der ersten Minute nach Belastung gilt in der Studie von Cole et al. 1999 als auffällig. Sonst vergleicht die App mit deinen eigenen Werten.</p>
+        <p>Wie schnell dein Puls in der ersten Minute nach Belastung sinkt, vergleicht die App mit deinen eigenen früheren Werten. Als Orientierung nutzen wir die Studie von Cole et al. 1999. Die App bewertet daraus kein Risiko und stellt keinen Befund.</p>
         <h3>Fitness-Stufe aus VO₂max <span class="tag tag-lit">literaturbasiert</span></h3>
         <p>Einordnung nach Alter und Geschlecht anhand der Referenzwerte von Kaminsky et al. 2015 (FRIEND-Register, USA, Laufbandtests). Die VO₂max der Apple Watch ist selbst eine Schätzung und liegt oft daneben (Lambe et al. 2025). Zum Zusammenhang von Fitness und Gesundheit im Alter siehe Kodama et al. 2009 und Mandsager et al. 2018.</p>
         <h3>HRV allgemein</h3>
         <p>Grundlagen zur Messung und Deutung der HRV: Task Force 1996, Shaffer und Ginsberg 2017.</p>
 
-        <h2 id="koerper">5. Körper und biologisches Alter</h2>
-        <h3>Biologisches Alter <span class="tag tag-mix">angelehnt</span></h3>
-        <p>Eine statistische Schätzung aus vier Bereichen: Fitness (VO₂max), Aktivität (Schritte, Training), Schlaf und Körperzusammensetzung. Für jeden Bereich nutzen wir Zusammenhänge mit dem Sterberisiko aus großen Kohortenstudien und rechnen das Risiko in Jahre um (Gompertz-Gesetz der Sterblichkeit). Ausreißer werden gedämpft.</p>
+        <h2 id="koerper">5. Körper und Fitnessalter</h2>
+        <h3>Fitnessalter <span class="tag tag-mix">angelehnt</span></h3>
+        <p>Fitnessalter: eine Schätzung aus deinen Fitness- und Aktivitätswerten, kein medizinischer Wert. Eine statistische Schätzung aus vier Bereichen: Fitness (VO₂max), Aktivität (Schritte, Training), Schlaf und Körperzusammensetzung. Wir vergleichen deine Werte mit Durchschnittswerten aus großen Bevölkerungsstudien und drücken das Ergebnis als Alter aus. Die Umrechnung nutzt Zusammenhänge aus diesen Studien (Gompertz-Gesetz). Ausreißer werden gedämpft.</p>
         <ul>
           <li>Es ist ein Durchschnittsmodell aus Bevölkerungsdaten, keine Messung deines Körpers und kein Laborwert.</li>
           <li>Es sagt nichts über deine persönliche Lebenserwartung aus.</li>
-          <li>Unter 16 Jahren zeigt die App das biologische Alter nicht.</li>
+          <li>Unter 16 Jahren zeigt die App das Fitnessalter nicht.</li>
         </ul>
         <p>Quellen: Kaminsky 2015, Kodama 2009, Paluch 2022, Arem 2015, Cappuccio 2010, Windred 2024, Leary 2020, Global BMI Mortality Collaboration 2016, Ashwell 2012, Zhang 2016, Leong 2015, Voss 2015, Lambe 2025, Schutz 2002, Gompertz 1825.</p>
-        <h3>Alterstempo <span class="tag tag-lit">literaturbasiert</span></h3>
-        <p>Trend deines biologischen Alters über 30 Tage mit der robusten Theil-Sen-Steigung, einem statistischen Standardverfahren. Erst ab 21 gültigen Tagen.</p>
+        <h3>Trend deines Fitnessalters <span class="tag tag-lit">literaturbasiert</span></h3>
+        <p>Trend deines Fitnessalters über 30 Tage mit der robusten Theil-Sen-Steigung, einem statistischen Standardverfahren. Erst ab 21 gültigen Tagen.</p>
         <h3>Körperzusammensetzung (FFMI) <span class="tag tag-lit">literaturbasiert</span></h3>
         <p>Fettfreie-Masse-Index und Fettmasse-Index im Vergleich zu Referenzbereichen nach Alter und Geschlecht (Schutz et al. 2002). Die Werte hängen von deiner Waage ab und ersetzen keine DXA-Messung.</p>
 

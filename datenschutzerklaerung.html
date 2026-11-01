@@ -78,14 +78,14 @@
             <caption>Datenflüsse der App HealthUp+</caption>
             <thead><tr><th scope="col">Funktion</th><th scope="col">Welche Daten</th><th scope="col">Wohin</th><th scope="col">Rechtsgrundlage</th></tr></thead>
             <tbody>
-              <tr><td>Scores, Coach, Schlaf, Stress, Bio-Alter</td><td>Freigegebene Apple-Health-Daten</td><td>Nur dein Gerät</td><td>Art. 9 Abs. 2 lit. a und Art. 6 Abs. 1 lit. a DSGVO (deine Einwilligung über die Health-Freigabe)</td></tr>
-              <tr><td>Schreiben nach Apple Health</td><td>Nährwerte, Wasser, Achtsamkeitsminuten, auf der Watch Trainings</td><td>Apple Health auf deinem Gerät</td><td>Art. 9 Abs. 2 lit. a DSGVO (Einwilligung)</td></tr>
+              <tr><td>Scores, Coach, Schlaf, Stress, Fitnessalter</td><td>Freigegebene Apple-Health-Daten</td><td>Nur dein Gerät</td><td>Art. 9 Abs. 2 lit. a und Art. 6 Abs. 1 lit. a DSGVO (deine Einwilligung über die Health-Freigabe)</td></tr>
+              <tr><td>Schreiben nach Apple Health</td><td>Nährwerte, Wasser, Achtsamkeitsminuten, auf der Watch Trainings und geschätzte Schlafphasen</td><td>Apple Health auf deinem Gerät</td><td>Art. 9 Abs. 2 lit. a DSGVO (Einwilligung)</td></tr>
               <tr><td>Ernährungstagebuch</td><td>Mahlzeiten, Mengen, Ziele</td><td>Nur dein Gerät</td><td>Art. 9 Abs. 2 lit. a DSGVO (Einwilligung durch Nutzung)</td></tr>
               <tr><td>Barcode-Scan</td><td>Barcode, IP-Adresse, App-Kennung</td><td>Open Food Facts (world.openfoodfacts.org)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
               <tr><td>Lebensmittelsuche nach Markenprodukten</td><td>Eingetippter Suchbegriff (ab zwei Zeichen, auch ein Korrekturvorschlag), App-Sprache, IP-Adresse, App-Kennung</td><td>Open Food Facts (search.openfoodfacts.org)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
               <tr><td>Rezepte und Lebensmitteldatenbank laden</td><td>IP-Adresse, Zeitpunkt, abgerufene Datei</td><td>GitHub</td><td>Art. 6 Abs. 1 lit. b und f DSGVO</td></tr>
               <tr><td>Lebensmittel vorschlagen (freiwillig)</td><td>Name, Marke, Barcode, Nährwerte des Lebensmittels (verschlüsselt)</td><td>Apple iCloud, lesbar nur für uns</td><td>Art. 6 Abs. 1 lit. a DSGVO</td></tr>
-              <tr><td>KI-Foto-Analyse (freiwillig)</td><td>Das Foto deiner Mahlzeit, eine feste Anweisung, dein API-Schlüssel</td><td>Direkt an den von dir gewählten KI-Anbieter (USA)</td><td>Deine ausdrückliche Einwilligung, Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO, jederzeit widerrufbar (Abschnitt 9)</td></tr>
+              <tr><td>KI-Foto-Analyse (freiwillig)</td><td>Das Foto deiner Mahlzeit, eine feste Anweisung, dein API-Schlüssel</td><td>Direkt an den von dir gewählten KI-Anbieter (USA)</td><td>Deine ausdrückliche Einwilligung, Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO, jederzeit widerrufbar (Abschnitt 9). Übermittlung in die USA: bei Google Art. 45 DSGVO, bei OpenAI, Anthropic und xAI Art. 49 Abs. 1 lit. a DSGVO (Abschnitt 9.3)</td></tr>
               <tr><td>Liga (nur mit Anmeldung)</td><td>Anzeigename, Profilfoto, Freundescode, Punkte und Rundendaten</td><td>Apple iCloud (öffentliche CloudKit-Datenbank)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
               <tr><td>Meldungen und Moderation</td><td>Wer wen meldet, Grund, Notiz (verschlüsselt)</td><td>Apple iCloud, lesbar nur für die Moderation</td><td>Art. 6 Abs. 1 lit. f DSGVO</td></tr>
             </tbody>
@@ -98,7 +98,7 @@
         <p>Nur nach deiner Freigabe im iOS-Dialog liest HealthUp+ diese Daten aus Apple Health:</p>
         <ul>
           <li><strong>Aktivität:</strong> Schritte, aktive Energie, Ruheenergie (Grundumsatz), Trainingsminuten, Trainings, Geh- und Laufstrecke, Stockwerke, Stehstunden</li>
-          <li><strong>Schlaf:</strong> Schlafanalyse aus Apple Health, also Schlafzeiten und, wenn vorhanden, Schlafphasen, die deine Apple Watch oder eine andere App dort gespeichert hat. HealthUp+ schätzt derzeit keine eigenen Schlafphasen.</li>
+          <li><strong>Schlaf:</strong> Schlafanalyse aus Apple Health. Schlafzeiten und Schlafphasen liest HealthUp+ aus Apple Health. Wenn keine Phasen vorhanden sind, schätzt die App sie mit einem eigenen Modell auf dem Gerät. Diese Schätzung ist nicht klinisch geprüft. <!-- TODO Code: Wenn das eigene Schlafmodell aus der App entfernt ist (Jurist Lieferung 2, Punkt 17), ersetzen durch: Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ schätzt keine eigenen Schlafphasen. --></li>
           <li><strong>Herz und Vitalwerte:</strong> Herzfrequenz, Herzfrequenzvariabilität (HRV), Ruhepuls, Gehpuls, Atemfrequenz, Sauerstoffsättigung, VO₂max, Körpertemperatur und Handgelenkstemperatur im Schlaf</li>
           <li><strong>Körper:</strong> Größe, Gewicht, Körperfettanteil, Magermasse, Geburtsdatum und biologisches Geschlecht (du kannst Geburtsdatum und Geschlecht auch selbst im Profil eintragen)</li>
         </ul>
@@ -107,14 +107,17 @@
         <p>Nur wenn du es erlaubst, schreibt HealthUp+ in Apple Health:</p>
         <ul>
           <li><strong>iPhone:</strong> Nährwerte aus deinem Ernährungstagebuch (Energie, Eiweiß, Kohlenhydrate, Fett, Ballaststoffe), Wasser und Achtsamkeitsminuten nach Atemübungen</li>
-          <li><strong>Apple Watch:</strong> Achtsamkeitsminuten sowie Trainings, die du auf der Watch startest, mit aktiver Energie, Herzfrequenz und Strecke</li>
+          <li><strong>Apple Watch:</strong> mit der HealthUp+ App auf der Watch geschätzte Schlafphasen (Wach, Kern, Tief, REM), Achtsamkeitsminuten sowie Trainings, die du auf der Watch startest, mit aktiver Energie, Herzfrequenz und Strecke</li>
         </ul>
         <p>Die Freigaben änderst du jederzeit in den iOS-Einstellungen unter Datenschutz und Sicherheit, Health, HealthUp+. Ein Widerruf gilt für die Zukunft. Ohne Health-Freigabe gibt es keine Scores.</p>
 
         <h2 id="lokal">5. Was nur auf deinem Gerät bleibt</h2>
         <ul>
-          <li>Alle Scores: Belastung, Erholung, Bereitschaft, Schlaf, Stress, Körperenergie, biologisches Alter. Alle Berechnungen laufen auf dem Gerät.</li>
-          <li>Der Coach. Er ist kein Chatbot mit Cloud-KI, sondern arbeitet mit Regeln und einem kleinen Modell auf dem Gerät.</li>
+          <li>Alle Scores: Belastung, Erholung, Bereitschaft, Schlaf, Stress, Körperenergie, Fitnessalter. Alle Berechnungen laufen auf dem Gerät.</li>
+          <li>Stress: Den Stressverlauf über den Tag schätzt ein kleines Modell auf dem Gerät. Wir haben es mit simulierten Daten entwickelt, nicht mit echten Messungen von Menschen unter Stress. Es ist nicht klinisch geprüft.</li>
+          <li>Schlafphasen: Fehlen sie in Apple Health, schätzt sie ein eigenes Modell auf dem Gerät, nicht klinisch geprüft. <!-- TODO Code: Wenn das eigene Schlafmodell aus der App entfernt ist (Jurist Lieferung 2, Punkt 17), ersetzen durch: Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ schätzt keine eigenen Schlafphasen. --></li>
+          <li>Fitnessalter: eine Schätzung aus deinen Fitness- und Aktivitätswerten, kein medizinischer Wert.</li>
+          <li>Der Coach. Er ist kein Chatbot mit Cloud-KI. Er arbeitet mit Regeln, und die Reihenfolge der Tipps passt sich auf dem Gerät an deine Rückmeldungen an.</li>
           <li>Dein Ernährungstagebuch, Mahlzeiten, Ziele und Wasser</li>
           <li>Optionale Angaben zu Zyklus und Lebenslage, Check-ins und Coach-Feedback</li>
           <li>Tageswerte und Verlauf, Einstellungen, Sprache und Darstellung</li>
@@ -140,7 +143,7 @@
 
         <h2 id="vorschlaege">8. Lebensmittel für alle vorschlagen</h2>
         <p>Du kannst ein eigenes Lebensmittel freiwillig „für alle vorschlagen“. Vorher fragt die App nach deiner Zustimmung. Gesendet werden nur Name, Marke, Barcode und Nährwerte des Lebensmittels, verschlüsselt auf deinem Gerät, so dass nur wir es lesen können. Der Datensatz liegt in der öffentlichen CloudKit-Datenbank von Apple, lesbar ist für andere nur der Zeitpunkt. Wie bei jedem iCloud-Datensatz ist er technisch mit deiner anonymen iCloud-Kennung verknüpft.</p>
-        <p>Nach der Prüfung können die Werte öffentlich in der HealthUp+-Lebensmitteldatenbank erscheinen, ohne Bezug zu dir. Abgelehnte Vorschläge sollen nach 6 Monaten gelöscht werden. <!-- TODO Frist bestätigen --> Diese Frist ist vorgesehen, die technische Umsetzung wird noch geprüft.</p>
+        <p>Nach der Prüfung können die Werte öffentlich in der HealthUp+-Lebensmitteldatenbank erscheinen, ohne Bezug zu dir. Abgelehnte Vorschläge löschen wir 6 Monate nach der Entscheidung. Zur automatischen Löschung siehe <a href="#fristen">Abschnitt 15</a>. <!-- TODO Frist bestätigen: Automatische Löschung im Code fehlt noch. Feste Zusage erst, wenn die Entwicklung sie bestätigt hat. „Einmal im Monat von Hand“ nur eintragen, wenn Ahmet das wirklich so macht. --></p>
         <p>Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Du kannst sie per E-Mail widerrufen.</p>
 
         <h2 id="ki-foto">9. KI-Foto-Analyse mit deinem eigenen API-Schlüssel</h2>
@@ -163,8 +166,13 @@
           <li>oder indem du in der App den gespeicherten Schlüssel entfernst („Gespeicherten Schlüssel aus Keychain entfernen“).</li>
         </ul>
         <p>Danach sendet HealthUp+ keine Fotos mehr an den Anbieter. Was der Anbieter schon erhalten hat, regeln deine Bedingungen dort.</p>
-        <h3>9.3 Drittland und Speicherdauer beim Anbieter</h3>
-        <p>Die Anbieter verarbeiten das Foto in den USA. Dort kann das Datenschutzniveau niedriger sein als in der EU. Die Übermittlung stützt sich auf den Angemessenheitsbeschluss der EU-Kommission zum EU-U.S. Data Privacy Framework (Art. 45 DSGVO), soweit der Anbieter zertifiziert ist, sonst auf die Standardvertragsklauseln des Anbieters (Art. 46 DSGVO) und deine ausdrückliche Einwilligung (Art. 49 Abs. 1 lit. a DSGVO). <!-- TODO Zertifizierung je Anbieter auf dataprivacyframework.gov prüfen und mit Datum eintragen --></p>
+        <h3 id="ki-drittland">9.3 Drittland und Speicherdauer beim Anbieter</h3>
+        <p>Die Anbieter verarbeiten das Foto in den USA. Dort kann das Datenschutzniveau niedriger sein als in der EU, zum Beispiel können Behörden leichter auf Daten zugreifen, und deine Rechte sind schwerer durchzusetzen.</p>
+        <ul>
+          <li><strong>Google (Google LLC):</strong> ist nach dem EU-U.S. Data Privacy Framework zertifiziert (geprüft am 1. November 2026 auf dataprivacyframework.gov). Die Übermittlung stützt sich auf den Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO).</li>
+          <li><strong>OpenAI, Anthropic und xAI:</strong> waren am 1. November 2026 nicht nach dem Data Privacy Framework zertifiziert. Für sie gibt es keinen Angemessenheitsbeschluss. Die Übermittlung stützt sich auf deine ausdrückliche Einwilligung im Dialog vor dem ersten Foto (Art. 49 Abs. 1 lit. a DSGVO). Ob dein eigener Vertrag mit dem Anbieter Standardvertragsklauseln enthält, steht in dessen Bedingungen.</li>
+        </ul>
+        <p>Wir prüfen den Stand vor jeder neuen App-Version.</p>
         <p>Wie lange der Anbieter das Foto aufbewahrt, regelt dein Vertrag mit dem Anbieter. Die Anbieter geben für ihre Schnittstellen an, Eingaben für eine begrenzte Zeit zur Missbrauchskontrolle aufzubewahren. Details stehen in den Datenschutzbedingungen deines Anbieters.</p>
 
         <h2 id="ki-bilder">10. KI-erstellte Bilder</h2>
@@ -172,7 +180,7 @@
 
         <h2 id="liga">11. Liga: was öffentlich lesbar ist</h2>
         <p>Die Liga ist freiwillig und braucht „Mit Apple anmelden“. Ohne Anmeldung funktionieren alle Scores, aber keine Liga. Die Liga-Daten liegen in der <strong>öffentlichen</strong> CloudKit-Datenbank von Apple. Öffentlich heißt: Jede Person mit einem iCloud-Konto kann diese Daten technisch lesen, nicht nur deine Mitspieler. HealthUp+ betreibt dafür keinen eigenen Server.</p>
-        <p><strong>Kurz:</strong> In der Liga sehen andere deinen Anzeigenamen (in der offenen Arena gekürzt), dein Profilbild, deinen Freundescode, deine Siege und deine Tagespunkte von 0 bis 100. Puls, HRV, Schrittzahl, Gewicht und Schlafphasen werden nie geteilt. Die vollständige Liste steht hier.</p>
+        <p><strong>Kurz:</strong> In der Liga sehen andere deinen Anzeigenamen, dein Profilbild, deinen Freundescode, deine Siege und deine Tagespunkte von 0 bis 100. In der offenen Arena zeigt die App deinen Namen gekürzt an. In deinem Profil ist er aber so gespeichert, wie du ihn eingibst, und technisch für alle lesbar. Nutze deshalb gern ein Pseudonym. Puls, HRV, Schrittzahl, Gewicht und Schlafphasen werden nie geteilt. Die vollständige Liste steht hier.</p>
         <h3>11.1 Öffentlich lesbar</h3>
         <ul>
           <li><strong>Anzeigename.</strong> In der offenen Arena wird er gekürzt gespeichert (die ersten zwei Buchstaben des Vornamens und die letzten zwei des Nachnamens). In Freunde-Runden und im Profil steht er so, wie du ihn eingibst.</li>
@@ -185,21 +193,21 @@
         <p>Nicht hochgeladen werden: Schritte, Trainingsminuten, Schlafdauer, Herzfrequenz, HRV, Gewicht, Ernährung und alle anderen Messwerte. Auch die Aufteilung deiner Tagespunkte auf Schritte, Training und Schlaf bleibt auf deinem iPhone. Bitte beachte: Wer die <a href="community-regeln.html#punkte">Punkteregeln</a> kennt, kann aus Tagespunkten grob auf die Aktivität eines Tages schließen.</p>
         <h3>11.3 Ausblenden</h3>
         <p>Wen du in der Rangliste ausblendest, wird nur auf deinem Gerät gespeichert.</p>
-        <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, weil du an der Liga teilnehmen willst. Die Tagespunkte leiten sich aus Gesundheitsdaten ab, die Freigabe dafür gibst du mit der Teilnahme an der Liga (Art. 9 Abs. 2 lit. a DSGVO).</p>
+        <p>Für Anzeigename, Profilfoto, Freundescode und Rundendaten ist die Rechtsgrundlage Art. 6 Abs. 1 lit. b DSGVO, weil du an der Liga teilnehmen willst. Deine Tagespunkte berechnet die App aus Gesundheitsdaten (Schritte, Training und in Freunde-Runden mit Schlaf auch Schlaf). Die App lädt sie nur hoch, wenn du beim Beitritt zur Liga ausdrücklich zustimmst (Art. 9 Abs. 2 lit. a und Art. 6 Abs. 1 lit. a DSGVO). Du kannst diese Einwilligung jederzeit widerrufen, indem du die Liga verlässt oder dein Konto löschst. Danach lädt die App keine Punkte mehr hoch. Was mit bisherigen Punkten passiert, steht in <a href="#fristen">Abschnitt 15</a>. <!-- TODO Code: Beitrittsdialog mit ausdrücklicher Einwilligung, Namensbestätigung und Häkchen „mindestens 16“ fehlt noch in der App (Stand 0.1.5). --></p>
 
         <h2 id="moderation">12. Meldungen, Blockieren und Sperren</h2>
         <p>Du kannst andere in der Liga melden, zum Beispiel wegen eines unangemessenen Profilbilds oder Namens. Die Meldung wird auf deinem Gerät verschlüsselt (HPKE), so dass nur die Moderation sie lesen kann. Die gemeldete Person erfährt nicht, wer gemeldet hat.</p>
         <ul>
           <li><strong>Inhalt einer Meldung:</strong> die Nutzerkennungen und Anzeigenamen von dir und der gemeldeten Person, der Grund, der Ort in der App und eine kurze Notiz (höchstens 300 Zeichen).</li>
-          <li><strong>Prüfung:</strong> Jede Meldung prüft ein Mensch. Es gibt keine automatischen Sperren. Mögliche Entscheidungen: keine Maßnahme, Profilbild entfernen, Namen durch einen neutralen Namen ersetzen (zum Beispiel „Liga-Mitglied 4821“), Konto sperren. Die Entscheidung wird digital signiert in der öffentlichen CloudKit-Datenbank abgelegt, damit die App sie umsetzen kann. Ein entferntes Foto wird über einen Fingerabdruck des Bildes wiedererkannt, damit es nicht erneut erscheint.</li>
+          <li><strong>Prüfung:</strong> Jede Meldung prüft ein Mensch. Es gibt keine automatischen Sperren. Mögliche Entscheidungen: keine Maßnahme, Profilbild entfernen, Namen durch einen neutralen Namen ersetzen (zum Beispiel „Liga-Mitglied 4821“), Konto sperren. Damit die App die Entscheidung umsetzen kann, liegt in der öffentlichen CloudKit-Datenbank ein digital signierter Vermerk mit deiner Nutzerkennung, der Maßnahme und dem Datum, bei einem ersetzten Namen mit dem neutralen Namen, aber ohne Grund und ohne Inhalt der Meldung. Ein entferntes Foto wird über einen Fingerabdruck des Bildes wiedererkannt, damit es nicht erneut erscheint. Über jede Maßnahme informieren wir dich in der App mit einer kurzen Begründung. <!-- TODO Code: Die App zeigt gesperrten Personen bisher nur einen Sperrhinweis ohne Begründung. --></li>
           <li><strong>Folgen einer Sperre:</strong> Ein gesperrtes Konto sieht in der App einen Sperrhinweis mit Kontakt zum Support, kann die Liga nicht mehr nutzen und lädt keine Punkte mehr hoch.</li>
-          <li><strong>Einspruch:</strong> per E-Mail an <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a>.</li>
+          <li><strong>Einspruch:</strong> innerhalb von sechs Monaten per E-Mail an <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a>.</li>
         </ul>
-        <p>Meldungen sollen nach 6 Monaten gelöscht werden. <!-- TODO Frist bestätigen --> Diese Frist ist vorgesehen, die technische Umsetzung wird noch geprüft. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und respektvollen Liga (Art. 6 Abs. 1 lit. f DSGVO). Die Regeln stehen unter <a href="community-regeln.html">Liga und Community-Regeln</a>.</p>
+        <p>Meldungen löschen wir 6 Monate nach der Entscheidung. Den Fingerabdruck eines entfernten Fotos und den Vermerk über eine Sperre bewahren wir auf, solange die Sperre gilt. Zur automatischen Löschung siehe <a href="#fristen">Abschnitt 15</a>. <!-- TODO Frist bestätigen: Automatische Löschung im Code fehlt noch. Feste Zusage erst, wenn die Entwicklung sie bestätigt hat. „Einmal im Monat von Hand“ nur eintragen, wenn Ahmet das wirklich so macht. --> Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und respektvollen Liga (Art. 6 Abs. 1 lit. f DSGVO). Die Regeln stehen unter <a href="community-regeln.html">Liga und Community-Regeln</a>.</p>
 
         <h2 id="apple">13. Weitere Apple-Dienste</h2>
         <ul>
-          <li><strong>Mit Apple anmelden:</strong> Apple gibt der App eine Kennung für dein Konto und beim ersten Mal Name und E-Mail-Adresse (auf Wunsch eine verborgene Weiterleitungsadresse). Name und E-Mail bleiben im Schlüsselbund des Geräts. Die E-Mail-Adresse wird nicht in die Liga hochgeladen. Gibt Apple keinen Namen weiter, nutzt die App den Teil der E-Mail-Adresse vor dem @ als vorläufigen Anzeigenamen. Diesen Namen kannst du im Profil ändern.</li>
+          <li><strong>Mit Apple anmelden:</strong> Apple gibt der App eine Kennung für dein Konto und beim ersten Mal Name und E-Mail-Adresse (auf Wunsch eine verborgene Weiterleitungsadresse). Name und E-Mail bleiben im Schlüsselbund des Geräts. Die E-Mail-Adresse wird nicht in die Liga hochgeladen. Gibt Apple keinen Namen weiter, schlägt die App beim Beitritt zur Liga einen Namen vor. Hochgeladen wird er erst, wenn du ihn bestätigst. Du kannst ihn jederzeit im Profil ändern. <!-- TODO Code: Heute nutzt die App den Teil der E-Mail-Adresse vor dem @ ohne Bestätigung als Anzeigenamen. Namensbestätigung im Beitrittsdialog fehlt noch. --></li>
           <li><strong>iCloud privat:</strong> Auszeichnungen und Check-ins gleicht die App über dein eigenes iCloud zwischen deinen Geräten ab. Andere sehen sie nicht.</li>
           <li><strong>Mitteilungen:</strong> Hinweise zu Liga-Ereignissen kommen über den Push-Dienst von Apple und enthalten keine Gesundheitswerte. Coaching-Hinweise erzeugt dein Gerät selbst.</li>
           <li><strong>Game Center:</strong> Wenn du dort angemeldet bist, erscheinen deine Liga-Siege als Erfolge.</li>
@@ -215,22 +223,23 @@
           <li><strong>Moderation:</strong> Ahmet Uprak als Betreiber liest verschlüsselte Meldungen und Lebensmittelvorschläge</li>
           <li><strong>Andere Nutzer und iCloud-Nutzer:</strong> die öffentlich lesbaren Liga-Daten aus Abschnitt 11</li>
         </ul>
-        <p>Bei Anbietern in den USA stützt sich die Übermittlung auf das EU-U.S. Data Privacy Framework, soweit der Anbieter zertifiziert ist, oder auf Standardvertragsklauseln der EU-Kommission.</p>
+        <p>Grundlagen für Übermittlungen in die USA: GitHub ist nach dem EU-U.S. Data Privacy Framework zertifiziert (Art. 45 DSGVO). Apple übermittelt Daten von Apple Distribution International (Irland) an Apple Inc. auf Grundlage von Standardvertragsklauseln der EU-Kommission (Art. 46 DSGVO). Für die KI-Anbieter gilt <a href="#ki-drittland">Abschnitt 9.3</a>.</p>
 
         <h2 id="fristen">15. Speicherdauer und Löschung</h2>
         <ul>
           <li><strong>Daten auf deinem Gerät:</strong> bis du sie löschst oder die App entfernst.</li>
-          <li><strong>Liga-Daten:</strong> bis du dein Konto in der App löschst. Liga-Daten von Konten, die sich nicht mehr anmelden, sollen nach 12 Monaten automatisch verfallen. <!-- TODO Frist bestätigen --> Diese Frist ist vorgesehen, die technische Umsetzung wird noch geprüft.</li>
-          <li><strong>Abgelehnte Lebensmittelvorschläge:</strong> Löschung nach 6 Monaten vorgesehen. <!-- TODO Frist bestätigen --></li>
-          <li><strong>Meldungen:</strong> Löschung nach 6 Monaten vorgesehen. <!-- TODO Frist bestätigen --></li>
+          <li><strong>Liga-Daten:</strong> bis du dein Konto in der App löschst. Hat sich ein Konto 12 Monate lang nicht angemeldet, löschen wir seine Liga-Daten.</li>
+          <li><strong>Abgelehnte Lebensmittelvorschläge:</strong> Wir löschen sie 6 Monate nach der Entscheidung.</li>
+          <li><strong>Meldungen:</strong> Wir löschen sie 6 Monate nach der Entscheidung. Den Fingerabdruck eines entfernten Fotos und den Vermerk über eine Sperre bewahren wir auf, solange die Sperre gilt.</li>
           <li><strong>E-Mails an uns:</strong> so lange, wie wir sie für deine Anfrage brauchen.</li>
         </ul>
+        <p>Die automatische Löschung ist noch nicht fertig. Bis dahin löschen wir nach den genannten Fristen von Hand. Auf Anfrage löschen wir sofort. <!-- TODO Frist bestätigen: Automatische Löschung im Code fehlt noch. Feste Zusage erst, wenn die Entwicklung sie bestätigt hat. „Einmal im Monat von Hand“ nur eintragen, wenn Ahmet das wirklich so macht. --></p>
         <h3>Konto löschen</h3>
-        <p>Unter Profil, Daten und Konto, „Konto löschen“ entfernst du dein Profil mit Name, Foto und Freundescode sowie offene Anfragen und Einladungen aus iCloud. Auf dem Gerät löscht die App alle gespeicherten Daten, auch das Ernährungstagebuch und Zwischenspeicher. In Runden, die schon laufen oder beendet sind, bleiben deine Tagespunkte und dein Platz stehen, damit die Rangliste für die anderen nicht umgeschrieben wird. Wenn du auch diese Einträge entfernt haben möchtest, schreib uns. Daten in Apple Health verwaltest du in der Health-App.</p>
+        <p>Unter Profil, Daten und Konto, „Konto löschen“ entfernst du dein Profil mit Name, Foto und Freundescode sowie offene Anfragen und Einladungen aus iCloud. Auf dem Gerät löscht die App alle gespeicherten Daten, auch das Ernährungstagebuch und Zwischenspeicher. In Runden, die schon laufen oder beendet sind, ersetzt die App deinen Namen und dein Foto durch „Gelöschtes Konto“ und trennt die Punkte von deiner Nutzerkennung. So bleibt die Rangliste für die anderen richtig, aber niemand kann die Punkte dir zuordnen. <!-- TODO Code: Anonymisierung fehlt noch. Heute bleiben Platz und Tagespunkte mit Nutzerkennung stehen (ChallengeCloudService+AccountDeletion, DeletedAccountPolicy). Bis zur Umsetzung Einträge auf Anfrage sofort löschen. --> Daten in Apple Health verwaltest du in der Health-App.</p>
 
         <h2 id="rechte">16. Deine Rechte</h2>
         <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21). Eine Einwilligung kannst du jederzeit für die Zukunft widerrufen (Art. 7 Abs. 3). Schreib dafür formlos an <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a>.</p>
-        <p>Du kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO). Für uns zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
+        <p>Du kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO). Für uns zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2 bis 4, 40213 Düsseldorf, <a href="https://www.ldi.nrw.de">www.ldi.nrw.de</a>. Du kannst dich auch an die Behörde an deinem Wohnort wenden.</p>
         <p>Es gibt keine automatisierten Entscheidungen im Sinne von Art. 22 DSGVO. Sperren entscheidet immer ein Mensch.</p>
 
         <h2 id="alter">17. Mindestalter</h2>
