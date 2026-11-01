@@ -85,12 +85,12 @@
           <li>Regelmäßigkeit als Sleep Regularity Index: Phillips et al. 2017, Windred et al. 2024 <span class="tag tag-lit">literaturbasiert</span></li>
           <li>Empfohlene Schlafdauer: Hirshkowitz et al. 2015 <span class="tag tag-lit">literaturbasiert</span></li>
         </ul>
-        <h3>Schlafdaten und Schlafphasen <span class="tag tag-own">Eigenentwicklung</span></h3>
-        <p>Schlafzeiten und Schlafphasen liest HealthUp+ aus Apple Health. Wenn keine Phasen vorhanden sind, schätzt die App sie mit einem eigenen Modell auf dem Gerät. Diese Schätzung ist nicht klinisch geprüft. Läuft die HealthUp+ App auf deiner Apple Watch, schätzt die Watch die Phasen (Wach, Kern, Tief, REM) aus Bewegung und Puls und speichert sie in Apple Health. <!-- TODO Code: Wenn das eigene Schlafmodell aus der App entfernt ist (Jurist Lieferung 2, Punkt 17), ersetzen durch: Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ schätzt keine eigenen Schlafphasen. --></p>
+        <h3>Schlafdaten und Schlafphasen</h3>
+        <p>Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ hat kein eigenes Schlafmodell und schätzt oder schreibt keine eigenen Schlafphasen. Die Phasen stammen von deiner Apple Watch oder einer anderen Quelle in Apple Health. <!-- TODO Code: gilt ab App-Update ohne Schlafmodell --></p>
 
         <h2 id="stress">4. Stress und Vitalwerte</h2>
         <h3>Stress-Tageswert <span class="tag tag-own">Eigenentwicklung</span></h3>
-        <p>Eine Schätzung aus Erholung, Belastung, HRV und Ruhepuls im Vergleich zu deiner Basis, auf einer Skala von 8 bis 88. Im Tagesverlauf nutzt die App den Puls über Ruhe in 15-Minuten-Blöcken und lässt Schlaf, Training und Gehen weg. Der Wert ist nicht validiert und misst keinen Stress, sondern schätzt ihn. Den Stressverlauf über den Tag schätzt ein kleines Modell auf dem Gerät. Wir haben es mit simulierten Daten entwickelt, nicht mit echten Messungen von Menschen unter Stress. Es ist nicht klinisch geprüft.</p>
+        <p>Eine Schätzung aus Erholung, Belastung, HRV und Ruhepuls im Vergleich zu deiner Basis, auf einer Skala von 8 bis 88. Im Tagesverlauf nutzt die App den Puls über Ruhe in 15-Minuten-Blöcken und lässt Schlaf, Training und Gehen weg. Der Wert ist nicht validiert und misst keinen Stress, sondern schätzt ihn. Den Stressverlauf über den Tag schätzt ein kleines Modell auf dem Gerät. Wir haben es mit simulierten Daten entwickelt, nicht mit echten Messungen von Menschen unter Stress. Es ist nicht klinisch geprüft. Der Wert beschreibt eine körperliche Anspannung aus Puls und HRV. Er sagt nichts über deine Gefühle oder deine Stimmung.</p>
         <h3>Persönlicher Normbereich <span class="tag tag-own">Eigenentwicklung</span></h3>
         <p>Für Vitalwerte zeigt die App deinen üblichen Bereich: Mittelwert plus oder minus 1,5 Standardabweichungen, mindestens 3 Messwerte.</p>
         <h3>Puls-Erholung nach einer Minute <span class="tag tag-lit">literaturbasiert</span></h3>

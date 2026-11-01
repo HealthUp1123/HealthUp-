@@ -79,7 +79,7 @@
             <thead><tr><th scope="col">Funktion</th><th scope="col">Welche Daten</th><th scope="col">Wohin</th><th scope="col">Rechtsgrundlage</th></tr></thead>
             <tbody>
               <tr><td>Scores, Coach, Schlaf, Stress, Fitnessalter</td><td>Freigegebene Apple-Health-Daten</td><td>Nur dein Gerät</td><td>Art. 9 Abs. 2 lit. a und Art. 6 Abs. 1 lit. a DSGVO (deine Einwilligung über die Health-Freigabe)</td></tr>
-              <tr><td>Schreiben nach Apple Health</td><td>Nährwerte, Wasser, Achtsamkeitsminuten, auf der Watch Trainings und geschätzte Schlafphasen</td><td>Apple Health auf deinem Gerät</td><td>Art. 9 Abs. 2 lit. a DSGVO (Einwilligung)</td></tr>
+              <tr><td>Schreiben nach Apple Health</td><td>Nährwerte, Wasser, Achtsamkeitsminuten, auf der Watch Trainings (keine Schlafphasen) <!-- TODO Code: gilt ab App-Update ohne Schlafmodell --></td><td>Apple Health auf deinem Gerät</td><td>Art. 9 Abs. 2 lit. a DSGVO (Einwilligung)</td></tr>
               <tr><td>Ernährungstagebuch</td><td>Mahlzeiten, Mengen, Ziele</td><td>Nur dein Gerät</td><td>Art. 9 Abs. 2 lit. a DSGVO (Einwilligung durch Nutzung)</td></tr>
               <tr><td>Barcode-Scan</td><td>Barcode, IP-Adresse, App-Kennung</td><td>Open Food Facts (world.openfoodfacts.org)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
               <tr><td>Lebensmittelsuche nach Markenprodukten</td><td>Eingetippter Suchbegriff (ab zwei Zeichen, auch ein Korrekturvorschlag), App-Sprache, IP-Adresse, App-Kennung</td><td>Open Food Facts (search.openfoodfacts.org)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
@@ -98,7 +98,7 @@
         <p>Nur nach deiner Freigabe im iOS-Dialog liest HealthUp+ diese Daten aus Apple Health:</p>
         <ul>
           <li><strong>Aktivität:</strong> Schritte, aktive Energie, Ruheenergie (Grundumsatz), Trainingsminuten, Trainings, Geh- und Laufstrecke, Stockwerke, Stehstunden</li>
-          <li><strong>Schlaf:</strong> Schlafanalyse aus Apple Health. Schlafzeiten und Schlafphasen liest HealthUp+ aus Apple Health. Wenn keine Phasen vorhanden sind, schätzt die App sie mit einem eigenen Modell auf dem Gerät. Diese Schätzung ist nicht klinisch geprüft. <!-- TODO Code: Wenn das eigene Schlafmodell aus der App entfernt ist (Jurist Lieferung 2, Punkt 17), ersetzen durch: Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ schätzt keine eigenen Schlafphasen. --></li>
+          <li><strong>Schlaf:</strong> Schlafanalyse aus Apple Health. Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ hat kein eigenes Schlafmodell und schätzt oder schreibt keine eigenen Schlafphasen. <!-- TODO Code: gilt ab App-Update ohne Schlafmodell --></li>
           <li><strong>Herz und Vitalwerte:</strong> Herzfrequenz, Herzfrequenzvariabilität (HRV), Ruhepuls, Gehpuls, Atemfrequenz, Sauerstoffsättigung, VO₂max, Körpertemperatur und Handgelenkstemperatur im Schlaf</li>
           <li><strong>Körper:</strong> Größe, Gewicht, Körperfettanteil, Magermasse, Geburtsdatum und biologisches Geschlecht (du kannst Geburtsdatum und Geschlecht auch selbst im Profil eintragen)</li>
         </ul>
@@ -107,7 +107,7 @@
         <p>Nur wenn du es erlaubst, schreibt HealthUp+ in Apple Health:</p>
         <ul>
           <li><strong>iPhone:</strong> Nährwerte aus deinem Ernährungstagebuch (Energie, Eiweiß, Kohlenhydrate, Fett, Ballaststoffe), Wasser und Achtsamkeitsminuten nach Atemübungen</li>
-          <li><strong>Apple Watch:</strong> mit der HealthUp+ App auf der Watch geschätzte Schlafphasen (Wach, Kern, Tief, REM), Achtsamkeitsminuten sowie Trainings, die du auf der Watch startest, mit aktiver Energie, Herzfrequenz und Strecke</li>
+          <li><strong>Apple Watch:</strong> Achtsamkeitsminuten sowie Trainings, die du auf der Watch startest, mit aktiver Energie, Herzfrequenz und Strecke. HealthUp+ schreibt keine Schlafphasen. <!-- TODO Code: gilt ab App-Update ohne Schlafmodell --></li>
         </ul>
         <p>Die Freigaben änderst du jederzeit in den iOS-Einstellungen unter Datenschutz und Sicherheit, Health, HealthUp+. Ein Widerruf gilt für die Zukunft. Ohne Health-Freigabe gibt es keine Scores.</p>
 
@@ -115,7 +115,7 @@
         <ul>
           <li>Alle Scores: Belastung, Erholung, Bereitschaft, Schlaf, Stress, Körperenergie, Fitnessalter. Alle Berechnungen laufen auf dem Gerät.</li>
           <li>Stress: Den Stressverlauf über den Tag schätzt ein kleines Modell auf dem Gerät. Wir haben es mit simulierten Daten entwickelt, nicht mit echten Messungen von Menschen unter Stress. Es ist nicht klinisch geprüft.</li>
-          <li>Schlafphasen: Fehlen sie in Apple Health, schätzt sie ein eigenes Modell auf dem Gerät, nicht klinisch geprüft. <!-- TODO Code: Wenn das eigene Schlafmodell aus der App entfernt ist (Jurist Lieferung 2, Punkt 17), ersetzen durch: Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ schätzt keine eigenen Schlafphasen. --></li>
+          <li>Schlafphasen: kommen direkt aus Apple Health. HealthUp+ hat kein eigenes Schlafmodell und schätzt keine eigenen Schlafphasen. <!-- TODO Code: gilt ab App-Update ohne Schlafmodell --></li>
           <li>Fitnessalter: eine Schätzung aus deinen Fitness- und Aktivitätswerten, kein medizinischer Wert.</li>
           <li>Der Coach. Er ist kein Chatbot mit Cloud-KI. Er arbeitet mit Regeln, und die Reihenfolge der Tipps passt sich auf dem Gerät an deine Rückmeldungen an.</li>
           <li>Dein Ernährungstagebuch, Mahlzeiten, Ziele und Wasser</li>
@@ -201,7 +201,7 @@
           <li><strong>Inhalt einer Meldung:</strong> die Nutzerkennungen und Anzeigenamen von dir und der gemeldeten Person, der Grund, der Ort in der App und eine kurze Notiz (höchstens 300 Zeichen).</li>
           <li><strong>Prüfung:</strong> Jede Meldung prüft ein Mensch. Es gibt keine automatischen Sperren. Mögliche Entscheidungen: keine Maßnahme, Profilbild entfernen, Namen durch einen neutralen Namen ersetzen (zum Beispiel „Liga-Mitglied 4821“), Konto sperren. Damit die App die Entscheidung umsetzen kann, liegt in der öffentlichen CloudKit-Datenbank ein digital signierter Vermerk mit deiner Nutzerkennung, der Maßnahme und dem Datum, bei einem ersetzten Namen mit dem neutralen Namen, aber ohne Grund und ohne Inhalt der Meldung. Ein entferntes Foto wird über einen Fingerabdruck des Bildes wiedererkannt, damit es nicht erneut erscheint. Über jede Maßnahme informieren wir dich in der App mit einer kurzen Begründung. <!-- TODO Code: Die App zeigt gesperrten Personen bisher nur einen Sperrhinweis ohne Begründung. --></li>
           <li><strong>Folgen einer Sperre:</strong> Ein gesperrtes Konto sieht in der App einen Sperrhinweis mit Kontakt zum Support, kann die Liga nicht mehr nutzen und lädt keine Punkte mehr hoch.</li>
-          <li><strong>Einspruch:</strong> innerhalb von sechs Monaten per E-Mail an <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a>.</li>
+          <li><strong>Einspruch:</strong> innerhalb von sechs Monaten ab unserer Mitteilung über die Entscheidung, per E-Mail an <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a>.</li>
         </ul>
         <p>Meldungen löschen wir 6 Monate nach der Entscheidung. Den Fingerabdruck eines entfernten Fotos und den Vermerk über eine Sperre bewahren wir auf, solange die Sperre gilt. Zur automatischen Löschung siehe <a href="#fristen">Abschnitt 15</a>. <!-- TODO Frist bestätigen: Automatische Löschung im Code fehlt noch. Feste Zusage erst, wenn die Entwicklung sie bestätigt hat. „Einmal im Monat von Hand“ nur eintragen, wenn Ahmet das wirklich so macht. --> Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und respektvollen Liga (Art. 6 Abs. 1 lit. f DSGVO). Die Regeln stehen unter <a href="community-regeln.html">Liga und Community-Regeln</a>.</p>
 
