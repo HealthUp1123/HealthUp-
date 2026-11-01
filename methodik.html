@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Methodik · HealthUp+</title>
+  <meta name="description" content="So rechnet HealthUp+: Erholung, Belastung, Schlaf, Stress, Körper und biologisches Alter mit Formeln, Quellen und klarer Kennzeichnung von Eigenentwicklung und Literatur.">
+  <meta name="theme-color" content="#071433">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><img src="images/logo.jpg" alt="" width="36" height="36">HealthUp+</a>
+      <nav class="links" aria-label="Hauptmenü">
+        <a href="index.html">Start</a>
+        <a href="datenschutzerklaerung.html">Datenschutz</a>
+        <a href="community-regeln.html">Liga und Regeln</a>
+        <a href="methodik.html" aria-current="page">Methodik</a>
+        <a href="ki-transparenz.html">KI-Transparenz</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt">
+    <div class="wrap page">
+      <article class="prose">
+        <p class="kicker">Transparenz</p>
+        <h1>Methodik: so rechnet HealthUp+</h1>
+        <p class="stand">Stand: 1. November 2026 · App-Version 0.1.5</p>
+
+        <div class="note warn">
+          <p><strong>Wichtig:</strong> Alle Werte sind Schätzungen zur Orientierung. HealthUp+ ist kein Medizinprodukt, die Werte sind nicht klinisch geprüft und ersetzen keine ärztliche Untersuchung.</p>
+        </div>
+
+        <p>Jeder Wert ist gekennzeichnet:</p>
+        <ul>
+          <li><span class="tag tag-lit">literaturbasiert</span> Formel oder Referenzwerte stammen aus veröffentlichter Forschung.</li>
+          <li><span class="tag tag-own">Eigenentwicklung</span> Formel und Gewichte haben wir selbst festgelegt. Sie sind nicht in Studien geprüft.</li>
+          <li><span class="tag tag-mix">angelehnt</span> Eigene Formel, die auf einem veröffentlichten Konzept aufbaut. Konkrete Gewichte und Grenzen sind eigene Setzungen.</li>
+        </ul>
+        <p>Alle Berechnungen laufen auf deinem iPhone oder deiner Apple Watch.</p>
+
+        <nav class="toc" aria-label="Inhalt dieser Seite">
+          <strong>Inhalt</strong>
+          <ol>
+            <li><a href="#erholung">Erholung und Bereitschaft</a></li>
+            <li><a href="#belastung">Belastung und Körperenergie</a></li>
+            <li><a href="#schlaf">Schlaf</a></li>
+            <li><a href="#stress">Stress und Vitalwerte</a></li>
+            <li><a href="#koerper">Körper und biologisches Alter</a></li>
+            <li><a href="#ernaehrung">Ernährung</a></li>
+            <li><a href="#literatur">Literatur</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="erholung">1. Erholung und Bereitschaft</h2>
+        <h3>Erholung (0 bis 100) <span class="tag tag-own">Eigenentwicklung</span></h3>
+        <p>Gewichteter Mittelwert aus vier Teilen: Schlaf 36 %, HRV 38 %, Ruhepuls 18 %, Belastung vom Vortag 8 %. Fehlt ein Teil, werden die anderen höher gewichtet. Es gibt einen kleinen Bonus, wenn Schlaf und HRV beide sehr gut sind, und einen Abzug, wenn Schlaf und Ruhepuls beide schwach sind. Die Erholung wird nur nach einer Nacht mit mindestens 2,5 Stunden Schlaf berechnet. Ab 70 gilt sie als gut, ab 45 als mittel.</p>
+        <h3>HRV-Teil <span class="tag tag-mix">angelehnt</span></h3>
+        <p>Wir vergleichen den Logarithmus deiner HRV der letzten 7 Nächte mit deiner eigenen Basis aus 30 Nächten (mindestens 7 Nächte). Die Idee, HRV als gleitenden Mittelwert gegen die persönliche Basis zu lesen, stammt aus der Sportwissenschaft (Plews et al. 2013, Buchheit 2014). Mischung und Skala sind eigene Setzungen. Apple Watch misst meist SDNN, nicht RMSSD. Beide Verfahren mischen wir nie.</p>
+        <h3>Ruhepuls-Teil <span class="tag tag-own">Eigenentwicklung</span></h3>
+        <p>Abweichung des Ruhepulses von deiner Basis, linear in Punkte umgerechnet.</p>
+        <h3>Bereitschaft <span class="tag tag-own">Eigenentwicklung</span></h3>
+        <p>Der große Wert auf dem Startbildschirm: Erholung 48 %, Schlafscore der Nacht 34 %, Belastung des Tages 18 %. Er wird morgens festgelegt, damit er sich über den Tag nicht ständig ändert. Nach weniger als 7 Nächten mit HRV zeigt die App einen Hinweis auf geringe Sicherheit.</p>
+
+        <h2 id="belastung">2. Belastung und Körperenergie</h2>
+        <h3>Belastung aus Herzfrequenz (0 bis 21) <span class="tag tag-mix">angelehnt</span></h3>
+        <p>Die Minuten in Pulszonen werden gewichtet und aufsummiert (ein Trainingsimpuls, angelehnt an den TRIMP nach Edwards). Anders als bei Edwards nutzen wir Zonen der Herzfrequenzreserve (Karvonen-Methode). Die Summe wird auf 0 bis 21 abgebildet, 60 Minuten in Zone 3 ergeben etwa 13. Die maximale Herzfrequenz schätzen wir mit 208 minus 0,7 mal Alter (Tanaka et al. 2001).</p>
+        <h3>Belastung aus Aktivität <span class="tag tag-own">Eigenentwicklung</span></h3>
+        <p>Ohne genug Pulsdaten schätzt die App die Belastung aus aktiver Energie, Schritten und Trainingsminuten mit eigenen Stufen. Beide Modelle werden zu einem Tageswert verbunden, höchstens 21.</p>
+        <h3>Ziel-Belastung <span class="tag tag-own">Eigenentwicklung</span></h3>
+        <p>Ein Zielbereich für den Tag, abhängig von deiner Erholung: je besser die Erholung, desto höher das Ziel. Der Bereich ist eine eigene Formel. Er stammt nicht aus dem Banister-Modell und ist nicht wissenschaftlich geprüft.</p>
+        <h3>Körperenergie <span class="tag tag-own">Eigenentwicklung</span></h3>
+        <p>Ein Akku-Bild: Schlaf lädt, Belastung, erhöhter Puls und Training verbrauchen. Reine Eigenentwicklung ohne Literaturgrundlage.</p>
+
+        <h2 id="schlaf">3. Schlaf</h2>
+        <h3>Schlafscore <span class="tag tag-mix">angelehnt</span></h3>
+        <p>Sechs Teile: Dauer 30 %, Durchschlafen 18 %, Aufbau der Schlafphasen 16 %, erholsamer Schlaf 15 %, Effizienz 13 %, Regelmäßigkeit 8 %. Ein schwacher Teil zieht den Wert stärker nach unten. Die Gewichte sind eigene Setzungen.</p>
+        <ul>
+          <li>Altersnormen für Schlafdauer und Schlafphasen: Ohayon et al. 2004 <span class="tag tag-lit">literaturbasiert</span></li>
+          <li>Regelmäßigkeit als Sleep Regularity Index: Phillips et al. 2017, Windred et al. 2024 <span class="tag tag-lit">literaturbasiert</span></li>
+          <li>Empfohlene Schlafdauer: Hirshkowitz et al. 2015 <span class="tag tag-lit">literaturbasiert</span></li>
+        </ul>
+        <h3>Schlafdaten und Schlafphasen</h3>
+        <p>Schlafzeiten und Schlafphasen (Wach, Kern, Tief, REM) liest HealthUp+ direkt aus Apple Health, zum Beispiel von deiner Apple Watch. HealthUp+ schätzt derzeit keine eigenen Schlafphasen.</p>
+
+        <h2 id="stress">4. Stress und Vitalwerte</h2>
+        <h3>Stress-Tageswert <span class="tag tag-own">Eigenentwicklung</span></h3>
+        <p>Eine Schätzung aus Erholung, Belastung, HRV und Ruhepuls im Vergleich zu deiner Basis, auf einer Skala von 8 bis 88. Im Tagesverlauf nutzt die App den Puls über Ruhe in 15-Minuten-Blöcken und lässt Schlaf, Training und Gehen weg. Der Wert ist nicht validiert und misst keinen Stress, sondern schätzt ihn.</p>
+        <h3>Persönlicher Normbereich <span class="tag tag-own">Eigenentwicklung</span></h3>
+        <p>Für Vitalwerte zeigt die App deinen üblichen Bereich: Mittelwert plus oder minus 1,5 Standardabweichungen, mindestens 3 Messwerte.</p>
+        <h3>Puls-Erholung nach einer Minute <span class="tag tag-lit">literaturbasiert</span></h3>
+        <p>Ein Abfall von 12 Schlägen oder weniger in der ersten Minute nach Belastung gilt in der Studie von Cole et al. 1999 als auffällig. Sonst vergleicht die App mit deinen eigenen Werten.</p>
+        <h3>Fitness-Stufe aus VO₂max <span class="tag tag-lit">literaturbasiert</span></h3>
+        <p>Einordnung nach Alter und Geschlecht anhand der Referenzwerte von Kaminsky et al. 2015 (FRIEND-Register, USA, Laufbandtests). Die VO₂max der Apple Watch ist selbst eine Schätzung und liegt oft daneben (Lambe et al. 2025). Zum Zusammenhang von Fitness und Gesundheit im Alter siehe Kodama et al. 2009 und Mandsager et al. 2018.</p>
+        <h3>HRV allgemein</h3>
+        <p>Grundlagen zur Messung und Deutung der HRV: Task Force 1996, Shaffer und Ginsberg 2017.</p>
+
+        <h2 id="koerper">5. Körper und biologisches Alter</h2>
+        <h3>Biologisches Alter <span class="tag tag-mix">angelehnt</span></h3>
+        <p>Eine statistische Schätzung aus vier Bereichen: Fitness (VO₂max), Aktivität (Schritte, Training), Schlaf und Körperzusammensetzung. Für jeden Bereich nutzen wir Zusammenhänge mit dem Sterberisiko aus großen Kohortenstudien und rechnen das Risiko in Jahre um (Gompertz-Gesetz der Sterblichkeit). Ausreißer werden gedämpft.</p>
+        <ul>
+          <li>Es ist ein Durchschnittsmodell aus Bevölkerungsdaten, keine Messung deines Körpers und kein Laborwert.</li>
+          <li>Es sagt nichts über deine persönliche Lebenserwartung aus.</li>
+          <li>Unter 16 Jahren zeigt die App das biologische Alter nicht.</li>
+        </ul>
+        <p>Quellen: Kaminsky 2015, Kodama 2009, Paluch 2022, Arem 2015, Cappuccio 2010, Windred 2024, Leary 2020, Global BMI Mortality Collaboration 2016, Ashwell 2012, Zhang 2016, Leong 2015, Voss 2015, Lambe 2025, Schutz 2002, Gompertz 1825.</p>
+        <h3>Alterstempo <span class="tag tag-lit">literaturbasiert</span></h3>
+        <p>Trend deines biologischen Alters über 30 Tage mit der robusten Theil-Sen-Steigung, einem statistischen Standardverfahren. Erst ab 21 gültigen Tagen.</p>
+        <h3>Körperzusammensetzung (FFMI) <span class="tag tag-lit">literaturbasiert</span></h3>
+        <p>Fettfreie-Masse-Index und Fettmasse-Index im Vergleich zu Referenzbereichen nach Alter und Geschlecht (Schutz et al. 2002). Die Werte hängen von deiner Waage ab und ersetzen keine DXA-Messung.</p>
+
+        <h2 id="ernaehrung">6. Ernährung</h2>
+        <ul>
+          <li>Grundumsatz: Formel nach Mifflin-St Jeor (Mifflin et al. 1990) <span class="tag tag-lit">literaturbasiert</span></li>
+          <li>Eiweißziel für Aktive: Morton et al. 2018 <span class="tag tag-lit">literaturbasiert</span></li>
+          <li>Ballaststoffe: Richtwert der Deutschen Gesellschaft für Ernährung (DGE) <span class="tag tag-lit">literaturbasiert</span></li>
+          <li>Nährwerte von Lebensmitteln: siehe <a href="quellen-lizenzen.html">Quellen und Lizenzen</a></li>
+          <li>KI-Foto: Schätzung durch den von dir gewählten KI-Anbieter, nicht durch uns geprüft</li>
+        </ul>
+
+        <h2 id="literatur">7. Literatur</h2>
+        <ol>
+          <li>Arem H, et al. Leisure time physical activity and mortality. JAMA Intern Med. 2015;175:959-967. <a href="https://doi.org/10.1001/jamainternmed.2015.0533">doi:10.1001/jamainternmed.2015.0533</a></li>
+          <li>Ashwell M, et al. Waist-to-height ratio is a better screening tool than waist circumference and BMI. Obes Rev. 2012;13:275-286. <a href="https://doi.org/10.1111/j.1467-789X.2011.00952.x">doi:10.1111/j.1467-789X.2011.00952.x</a></li>
+          <li>Buchheit M. Monitoring training status with HR measures. Front Physiol. 2014;5:73. <a href="https://doi.org/10.3389/fphys.2014.00073">doi:10.3389/fphys.2014.00073</a></li>
+          <li>Cappuccio FP, et al. Sleep duration and all-cause mortality. Sleep. 2010;33:585-592. <a href="https://doi.org/10.1093/sleep/33.5.585">doi:10.1093/sleep/33.5.585</a></li>
+          <li>Cole CR, et al. Heart-rate recovery immediately after exercise as a predictor of mortality. N Engl J Med. 1999;341:1351-1357. <a href="https://doi.org/10.1056/NEJM199910283411804">doi:10.1056/NEJM199910283411804</a></li>
+          <li>Edwards S. The Heart Rate Monitor Book. Sacramento: Fleet Feet Press; 1993.</li>
+          <li>Global BMI Mortality Collaboration. Body-mass index and all-cause mortality. Lancet. 2016;388:776-786. <a href="https://doi.org/10.1016/S0140-6736(16)30175-1">doi:10.1016/S0140-6736(16)30175-1</a></li>
+          <li>Gompertz B. On the nature of the function expressive of the law of human mortality. Phil Trans R Soc Lond. 1825;115:513-583. <a href="https://doi.org/10.1098/rstl.1825.0026">doi:10.1098/rstl.1825.0026</a></li>
+          <li>Hirshkowitz M, et al. National Sleep Foundation's sleep time duration recommendations. Sleep Health. 2015;1:40-43. <a href="https://doi.org/10.1016/j.sleh.2014.12.010">doi:10.1016/j.sleh.2014.12.010</a></li>
+          <li>Kaminsky LA, et al. Reference standards for cardiorespiratory fitness (FRIEND Registry). Mayo Clin Proc. 2015;90:1515-1523. <a href="https://doi.org/10.1016/j.mayocp.2015.07.026">doi:10.1016/j.mayocp.2015.07.026</a></li>
+          <li>Karvonen MJ, Kentala E, Mustala O. The effects of training on heart rate. Ann Med Exp Biol Fenn. 1957;35:307-315.</li>
+          <li>Kodama S, et al. Cardiorespiratory fitness as a quantitative predictor of all-cause mortality. JAMA. 2009;301:2024-2035. <a href="https://doi.org/10.1001/jama.2009.681">doi:10.1001/jama.2009.681</a></li>
+          <li>Lambe R, et al. Investigating the accuracy of Apple Watch VO2 max measurements: a validation study. PLOS ONE. 2025;20:e0323741. <a href="https://doi.org/10.1371/journal.pone.0323741">doi:10.1371/journal.pone.0323741</a></li>
+          <li>Leary JC, et al. Association of rapid eye movement sleep with mortality. JAMA Neurol. 2020;77:1241-1251. <a href="https://doi.org/10.1001/jamaneurol.2020.2108">doi:10.1001/jamaneurol.2020.2108</a></li>
+          <li>Leong DP, et al. Prognostic value of grip strength (PURE). Lancet. 2015;386:266-273. <a href="https://doi.org/10.1016/S0140-6736(14)62000-6">doi:10.1016/S0140-6736(14)62000-6</a></li>
+          <li>Mandsager K, et al. Association of cardiorespiratory fitness with long-term mortality. JAMA Netw Open. 2018;1:e183605. <a href="https://doi.org/10.1001/jamanetworkopen.2018.3605">doi:10.1001/jamanetworkopen.2018.3605</a></li>
+          <li>Mifflin MD, et al. A new predictive equation for resting energy expenditure. Am J Clin Nutr. 1990;51:241-247. <a href="https://doi.org/10.1093/ajcn/51.2.241">doi:10.1093/ajcn/51.2.241</a></li>
+          <li>Morton RW, et al. Protein supplementation and resistance training. Br J Sports Med. 2018;52:376-384. <a href="https://doi.org/10.1136/bjsports-2017-097608">doi:10.1136/bjsports-2017-097608</a></li>
+          <li>Ohayon MM, et al. Meta-analysis of quantitative sleep parameters from childhood to old age. Sleep. 2004;27:1255-1273. <a href="https://doi.org/10.1093/sleep/27.7.1255">doi:10.1093/sleep/27.7.1255</a></li>
+          <li>Paluch AE, et al. Daily steps and all-cause mortality. Lancet Public Health. 2022;7:e219-e228. <a href="https://doi.org/10.1016/S2468-2667(21)00302-9">doi:10.1016/S2468-2667(21)00302-9</a></li>
+          <li>Phillips AJK, et al. Irregular sleep/wake patterns are associated with poorer academic performance. Sci Rep. 2017;7:3216. <a href="https://doi.org/10.1038/s41598-017-03171-4">doi:10.1038/s41598-017-03171-4</a></li>
+          <li>Plews DJ, et al. Training adaptation and heart rate variability in elite endurance athletes. Sports Med. 2013;43:773-781. <a href="https://doi.org/10.1007/s40279-013-0071-8">doi:10.1007/s40279-013-0071-8</a></li>
+          <li>Schutz Y, Kyle UU, Pichard C. Fat-free mass index and fat mass index percentiles. Int J Obes. 2002;26:953-960. <a href="https://doi.org/10.1038/sj.ijo.0802037">doi:10.1038/sj.ijo.0802037</a></li>
+          <li>Shaffer F, Ginsberg JP. An overview of heart rate variability metrics and norms. Front Public Health. 2017;5:258. <a href="https://doi.org/10.3389/fpubh.2017.00258">doi:10.3389/fpubh.2017.00258</a></li>
+          <li>Tanaka H, Monahan KD, Seals DR. Age-predicted maximal heart rate revisited. J Am Coll Cardiol. 2001;37:153-156. <a href="https://doi.org/10.1016/S0735-1097(00)01054-8">doi:10.1016/S0735-1097(00)01054-8</a></li>
+          <li>Task Force of the ESC and NASPE. Heart rate variability: standards of measurement. Circulation. 1996;93:1043-1065. <a href="https://doi.org/10.1161/01.CIR.93.5.1043">doi:10.1161/01.CIR.93.5.1043</a></li>
+          <li>Voss A, et al. Short-term heart rate variability: influence of gender and age in healthy subjects. PLOS ONE. 2015;10:e0118308. <a href="https://doi.org/10.1371/journal.pone.0118308">doi:10.1371/journal.pone.0118308</a></li>
+          <li>Windred DP, et al. Sleep regularity is a stronger predictor of mortality risk than sleep duration. Sleep. 2024;47(1):zsad253. <a href="https://doi.org/10.1093/sleep/zsad253">doi:10.1093/sleep/zsad253</a></li>
+          <li>Zhang D, et al. Resting heart rate and all-cause and cardiovascular mortality. CMAJ. 2016;188:E53-E63. <a href="https://doi.org/10.1503/cmaj.150535">doi:10.1503/cmaj.150535</a></li>
+        </ol>
+        <p>Hinweis: Eine frühere Fassung nannte für die Ziel-Belastung das Banister-Modell und für das Gompertz-Gesetz eine falsche PubMed-Nummer. Beides ist korrigiert.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+    <nav aria-label="Rechtliches und Hilfe">
+      <a href="index.html">Start</a> 
+      <a href="datenschutzerklaerung.html">Datenschutz</a> 
+      <a href="impressum.html">Impressum</a> 
+      <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> 
+      <a href="community-regeln.html">Liga und Community-Regeln</a> 
+      <a href="methodik.html" aria-current="page">Methodik</a> 
+      <a href="ki-transparenz.html">KI-Transparenz</a> 
+      <a href="quellen-lizenzen.html">Quellen und Lizenzen</a> 
+      <a href="support.html">Support</a>
+    </nav>
+    <p>© 2026 Ahmet Uprak · HealthUp+ für iPhone und Apple Watch · App-Version 0.1.5</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutzerklärung · HealthUp+</title>
+  <meta name="description" content="Datenschutzerklärung für die App HealthUp+ (iPhone und Apple Watch) und diese Website: welche Daten wohin gehen, warum und wie lange.">
+  <meta name="theme-color" content="#071433">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><img src="images/logo.jpg" alt="" width="36" height="36">HealthUp+</a>
+      <nav class="links" aria-label="Hauptmenü">
+        <a href="index.html">Start</a>
+        <a href="datenschutzerklaerung.html" aria-current="page">Datenschutz</a>
+        <a href="community-regeln.html">Liga und Regeln</a>
+        <a href="methodik.html">Methodik</a>
+        <a href="ki-transparenz.html">KI-Transparenz</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt">
+    <div class="wrap page">
+      <article class="prose">
+        <p class="kicker">Rechtliches</p>
+        <h1>Datenschutzerklärung</h1>
+        <p class="stand">Stand: 1. November 2026 · gilt für die App HealthUp+ ab Version 0.1.5 und für diese Website</p>
+
+        <div class="note">
+          <p><strong>Kurz gesagt:</strong> HealthUp+ rechnet deine Gesundheitswerte auf deinem iPhone. Wir betreiben keine eigenen Server und nutzen kein Werbe-Tracking. Daten verlassen dein Gerät nur in diesen Fällen: für die Liga (Apple iCloud), beim Laden von Rezepten und der Lebensmitteldatenbank (GitHub), bei Barcode-Scan und Lebensmittelsuche, auch mit dem eingetippten Suchbegriff (Open Food Facts), wenn du ein Lebensmittel vorschlägst oder jemanden meldest (verschlüsselt an uns über Apple iCloud) und wenn du die KI-Foto-Analyse mit deinem eigenen API-Schlüssel nutzt (direkt an deinen KI-Anbieter).</p>
+        </div>
+
+        <nav class="toc" aria-label="Inhalt dieser Seite">
+          <strong>Inhalt</strong>
+          <ol>
+            <li><a href="#verantwortlicher">Verantwortlicher und Kontakt</a></li>
+            <li><a href="#website">Diese Website</a></li>
+            <li><a href="#ueberblick">Überblick: welche Daten wohin gehen</a></li>
+            <li><a href="#health">Apple Health: Lesen und Schreiben</a></li>
+            <li><a href="#lokal">Was nur auf deinem Gerät bleibt</a></li>
+            <li><a href="#ernaehrung">Ernährung, Barcode und Lebensmittelsuche</a></li>
+            <li><a href="#github">Rezepte und Lebensmitteldatenbank von GitHub</a></li>
+            <li><a href="#vorschlaege">Lebensmittel für alle vorschlagen</a></li>
+            <li><a href="#ki-foto">KI-Foto-Analyse mit deinem eigenen API-Schlüssel</a></li>
+            <li><a href="#ki-bilder">KI-erstellte Bilder</a></li>
+            <li><a href="#liga">Liga: was öffentlich lesbar ist</a></li>
+            <li><a href="#moderation">Meldungen, Blockieren und Sperren</a></li>
+            <li><a href="#apple">Weitere Apple-Dienste</a></li>
+            <li><a href="#empfaenger">Empfänger und Übermittlung in Drittländer</a></li>
+            <li><a href="#fristen">Speicherdauer und Löschung</a></li>
+            <li><a href="#rechte">Deine Rechte</a></li>
+            <li><a href="#alter">Mindestalter</a></li>
+            <li><a href="#medizin">Kein Medizinprodukt</a></li>
+            <li><a href="#aenderungen">Änderungen</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="verantwortlicher">1. Verantwortlicher und Kontakt</h2>
+        <p>Verantwortlich für die App HealthUp+ und diese Website ist:</p>
+        <p>Ahmet Uprak (Privatperson)<br>Sportstraße 40<br>33647 Bielefeld<br>Deutschland<br>
+        E-Mail: <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a></p>
+        <p>Diese Adresse gilt für Fragen zum Datenschutz, für Anfragen zu deinen Rechten, für Support und für Einsprüche gegen Moderationsentscheidungen. Einen Datenschutzbeauftragten gibt es nicht.</p>
+
+        <h2 id="website">2. Diese Website</h2>
+        <p>Diese Website liegt bei GitHub Pages, einem Dienst der GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA (ein Unternehmen von Microsoft). Beim Aufruf verarbeitet GitHub technisch nötige Daten in Server-Protokollen: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, übertragene Datenmenge, Statuscode, Browser und Betriebssystem sowie die vorher besuchte Seite.</p>
+        <p>Zweck ist die sichere und stabile Auslieferung der Seite. Rechtsgrundlage ist unser berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO. GitHub verarbeitet Daten auch in den USA. GitHub ist nach dem EU-U.S. Data Privacy Framework zertifiziert und nutzt außerdem Standardvertragsklauseln. Wir selbst haben keinen Zugriff auf diese Protokolle.</p>
+        <p>Die Website setzt keine Cookies, nutzt keine Analysedienste, lädt keine Schriften oder Skripte von fremden Servern und bindet keine Inhalte Dritter ein. Alle Bilder liegen im selben Repository.</p>
+
+        <h2 id="ueberblick">3. Überblick: welche Daten wohin gehen</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Datenflüsse der App HealthUp+</caption>
+            <thead><tr><th scope="col">Funktion</th><th scope="col">Welche Daten</th><th scope="col">Wohin</th><th scope="col">Rechtsgrundlage</th></tr></thead>
+            <tbody>
+              <tr><td>Scores, Coach, Schlaf, Stress, Bio-Alter</td><td>Freigegebene Apple-Health-Daten</td><td>Nur dein Gerät</td><td>Art. 9 Abs. 2 lit. a und Art. 6 Abs. 1 lit. a DSGVO (deine Einwilligung über die Health-Freigabe)</td></tr>
+              <tr><td>Schreiben nach Apple Health</td><td>Nährwerte, Wasser, Achtsamkeitsminuten, auf der Watch Trainings</td><td>Apple Health auf deinem Gerät</td><td>Art. 9 Abs. 2 lit. a DSGVO (Einwilligung)</td></tr>
+              <tr><td>Ernährungstagebuch</td><td>Mahlzeiten, Mengen, Ziele</td><td>Nur dein Gerät</td><td>Art. 9 Abs. 2 lit. a DSGVO (Einwilligung durch Nutzung)</td></tr>
+              <tr><td>Barcode-Scan</td><td>Barcode, IP-Adresse, App-Kennung</td><td>Open Food Facts (world.openfoodfacts.org)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
+              <tr><td>Lebensmittelsuche nach Markenprodukten</td><td>Eingetippter Suchbegriff (ab zwei Zeichen, auch ein Korrekturvorschlag), App-Sprache, IP-Adresse, App-Kennung</td><td>Open Food Facts (search.openfoodfacts.org)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
+              <tr><td>Rezepte und Lebensmitteldatenbank laden</td><td>IP-Adresse, Zeitpunkt, abgerufene Datei</td><td>GitHub</td><td>Art. 6 Abs. 1 lit. b und f DSGVO</td></tr>
+              <tr><td>Lebensmittel vorschlagen (freiwillig)</td><td>Name, Marke, Barcode, Nährwerte des Lebensmittels (verschlüsselt)</td><td>Apple iCloud, lesbar nur für uns</td><td>Art. 6 Abs. 1 lit. a DSGVO</td></tr>
+              <tr><td>KI-Foto-Analyse (freiwillig)</td><td>Das Foto deiner Mahlzeit, eine feste Anweisung, dein API-Schlüssel</td><td>Direkt an den von dir gewählten KI-Anbieter (USA)</td><td>Deine ausdrückliche Einwilligung, Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO, jederzeit widerrufbar (Abschnitt 9)</td></tr>
+              <tr><td>Liga (nur mit Anmeldung)</td><td>Anzeigename, Profilfoto, Freundescode, Punkte und Rundendaten</td><td>Apple iCloud (öffentliche CloudKit-Datenbank)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
+              <tr><td>Meldungen und Moderation</td><td>Wer wen meldet, Grund, Notiz (verschlüsselt)</td><td>Apple iCloud, lesbar nur für die Moderation</td><td>Art. 6 Abs. 1 lit. f DSGVO</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>HealthUp+ nutzt keine Werbung, kein Tracking im Sinne von Apple, keine Analyse- oder Werbe-SDKs und verkauft keine Daten.</p>
+
+        <h2 id="health">4. Apple Health: Lesen und Schreiben</h2>
+        <h3>4.1 Lesen</h3>
+        <p>Nur nach deiner Freigabe im iOS-Dialog liest HealthUp+ diese Daten aus Apple Health:</p>
+        <ul>
+          <li><strong>Aktivität:</strong> Schritte, aktive Energie, Ruheenergie (Grundumsatz), Trainingsminuten, Trainings, Geh- und Laufstrecke, Stockwerke, Stehstunden</li>
+          <li><strong>Schlaf:</strong> Schlafanalyse aus Apple Health, also Schlafzeiten und, wenn vorhanden, Schlafphasen, die deine Apple Watch oder eine andere App dort gespeichert hat. HealthUp+ schätzt derzeit keine eigenen Schlafphasen.</li>
+          <li><strong>Herz und Vitalwerte:</strong> Herzfrequenz, Herzfrequenzvariabilität (HRV), Ruhepuls, Gehpuls, Atemfrequenz, Sauerstoffsättigung, VO₂max, Körpertemperatur und Handgelenkstemperatur im Schlaf</li>
+          <li><strong>Körper:</strong> Größe, Gewicht, Körperfettanteil, Magermasse, Geburtsdatum und biologisches Geschlecht (du kannst Geburtsdatum und Geschlecht auch selbst im Profil eintragen)</li>
+        </ul>
+        <p>Diese Werte sind Gesundheitsdaten im Sinne von Art. 9 DSGVO. HealthUp+ nutzt sie nur, um auf deinem Gerät zu rechnen, und lädt sie nicht hoch. Ernährungsdaten aus anderen Apps liest HealthUp+ nicht.</p>
+        <h3>4.2 Schreiben</h3>
+        <p>Nur wenn du es erlaubst, schreibt HealthUp+ in Apple Health:</p>
+        <ul>
+          <li><strong>iPhone:</strong> Nährwerte aus deinem Ernährungstagebuch (Energie, Eiweiß, Kohlenhydrate, Fett, Ballaststoffe), Wasser und Achtsamkeitsminuten nach Atemübungen</li>
+          <li><strong>Apple Watch:</strong> Achtsamkeitsminuten sowie Trainings, die du auf der Watch startest, mit aktiver Energie, Herzfrequenz und Strecke</li>
+        </ul>
+        <p>Die Freigaben änderst du jederzeit in den iOS-Einstellungen unter Datenschutz und Sicherheit, Health, HealthUp+. Ein Widerruf gilt für die Zukunft. Ohne Health-Freigabe gibt es keine Scores.</p>
+
+        <h2 id="lokal">5. Was nur auf deinem Gerät bleibt</h2>
+        <ul>
+          <li>Alle Scores: Belastung, Erholung, Bereitschaft, Schlaf, Stress, Körperenergie, biologisches Alter. Alle Berechnungen laufen auf dem Gerät.</li>
+          <li>Der Coach. Er ist kein Chatbot mit Cloud-KI, sondern arbeitet mit Regeln und einem kleinen Modell auf dem Gerät.</li>
+          <li>Dein Ernährungstagebuch, Mahlzeiten, Ziele und Wasser</li>
+          <li>Optionale Angaben zu Zyklus und Lebenslage, Check-ins und Coach-Feedback</li>
+          <li>Tageswerte und Verlauf, Einstellungen, Sprache und Darstellung</li>
+          <li>Kennung, Name und E-Mail aus „Mit Apple anmelden“ sowie dein KI-API-Schlüssel im Schlüsselbund (Keychain) des Geräts</li>
+          <li>Widgets, Apple Watch und Siri bekommen ihre Werte direkt von deinem iPhone</li>
+          <li>Absturzberichte (MetricKit) im Speicher der App. Wir erhalten sie nicht automatisch.</li>
+        </ul>
+        <p>Exporte (JSON, CSV, PDF-Bericht) startest du selbst unter Profil, Daten und Konto.</p>
+
+        <h2 id="ernaehrung">6. Ernährung, Barcode und Lebensmittelsuche</h2>
+        <p>Für Produkte mit Barcode und für Markenprodukte fragt die App die Datenbank von Open Food Facts ab (Open Food Facts, gemeinnütziger Verein, Frankreich). Das passiert in zwei Fällen:</p>
+        <ul>
+          <li><strong>Barcode-Scan:</strong> Die App sendet die erkannte Nummer an world.openfoodfacts.org.</li>
+          <li><strong>Lebensmittelsuche:</strong> Wenn du im Suchfeld tippst, sendet die App deinen Suchbegriff schon während des Tippens (ab zwei Zeichen, kurz verzögert) an die Suche von Open Food Facts (search.openfoodfacts.org), um passende Markenprodukte zu finden. Gesendet werden der eingetippte Text, bei Tippfehlern auch ein Korrekturvorschlag der App, und die Sprache der App. Tippe deshalb keine persönlichen Angaben in die Lebensmittelsuche.</li>
+        </ul>
+        <p>Dabei sieht Open Food Facts außerdem deine IP-Adresse und eine technische Kennung der App (Name und Version). Dein Tagebuch, deine Mengen und deine Gesundheitsdaten werden nicht übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, weil du Lebensmittel finden willst.</p>
+        <p>Für den Barcode-Scan nutzt die App die Kamera. Das Kamerabild wird nur auf dem Gerät ausgewertet, übertragen wird nur die erkannte Nummer.</p>
+        <p>Die Daten von Open Food Facts stehen unter der Open Database License (ODbL). Hinweise zu Quellen und Lizenzen findest du unter <a href="quellen-lizenzen.html">Quellen und Lizenzen</a>.</p>
+
+        <h2 id="github">7. Rezepte und Lebensmitteldatenbank von GitHub</h2>
+        <p>Die Rezeptliste mit Bildern (Repository <code>HealthUp1123/healthup-recipes</code>) und die HealthUp+-Lebensmitteldatenbank (Repository <code>HealthUp1123/food-database</code>) lädt die App von GitHub (Adresse raw.githubusercontent.com). Wie bei jedem Abruf im Internet sieht GitHub dabei deine IP-Adresse, den Zeitpunkt und die abgerufene Datei. Persönliche Daten aus der App werden nicht übertragen. Die Suche in der Lebensmitteldatenbank läuft danach auf deinem Gerät, deine Suchbegriffe gehen dafür nicht ins Netz.</p>
+        <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (du willst Rezepte und Lebensmittel nutzen) und unser berechtigtes Interesse an einer einfachen Bereitstellung ohne eigene Server (Art. 6 Abs. 1 lit. f DSGVO). Zu GitHub siehe auch Abschnitt 2.</p>
+
+        <h2 id="vorschlaege">8. Lebensmittel für alle vorschlagen</h2>
+        <p>Du kannst ein eigenes Lebensmittel freiwillig „für alle vorschlagen“. Vorher fragt die App nach deiner Zustimmung. Gesendet werden nur Name, Marke, Barcode und Nährwerte des Lebensmittels, verschlüsselt auf deinem Gerät, so dass nur wir es lesen können. Der Datensatz liegt in der öffentlichen CloudKit-Datenbank von Apple, lesbar ist für andere nur der Zeitpunkt. Wie bei jedem iCloud-Datensatz ist er technisch mit deiner anonymen iCloud-Kennung verknüpft.</p>
+        <p>Nach der Prüfung können die Werte öffentlich in der HealthUp+-Lebensmitteldatenbank erscheinen, ohne Bezug zu dir. Abgelehnte Vorschläge sollen nach 6 Monaten gelöscht werden. <!-- TODO Frist bestätigen --> Diese Frist ist vorgesehen, die technische Umsetzung wird noch geprüft.</p>
+        <p>Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Du kannst sie per E-Mail widerrufen.</p>
+
+        <h2 id="ki-foto">9. KI-Foto-Analyse mit deinem eigenen API-Schlüssel</h2>
+        <!-- TODO Code: Einwilligungsdialog vor dem ersten KI-Foto und Schalter zum Widerruf sind noch nicht in der App (Stand Code 0.1.5). Vorhanden ist nur das Entfernen des Schlüssels. Text erst so veröffentlichen, wenn beides umgesetzt ist. -->
+        <p>Die KI-Foto-Analyse ist freiwillig. Ohne sie kannst du Mahlzeiten per Suche, Barcode oder von Hand eintragen. HealthUp+ enthält keinen eigenen Schlüssel.</p>
+        <ul>
+          <li><strong>Dein eigener Schlüssel:</strong> Du hinterlegst deinen eigenen API-Schlüssel bei einem Anbieter deiner Wahl: Google Gemini (Google LLC, USA), Anthropic Claude (Anthropic PBC, USA), OpenAI (OpenAI OpCo LLC, USA) oder Grok (X.AI LLC, USA). Der Schlüssel liegt im Schlüsselbund nur dieses iPhones und wird nicht mit iCloud abgeglichen. Es gelten die Bedingungen und die Datenschutzerklärung deines Anbieters. Mögliche Kosten rechnet der Anbieter mit dir ab. HealthUp+ hat mit den Anbietern keinen Vertrag und erhält von ihnen kein Geld.</li>
+          <li><strong>Was gesendet wird:</strong> Nur das Foto deiner Mahlzeit, verkleinert auf höchstens 1024 Pixel und ohne Ortsangaben, und eine feste Anweisung an die KI. Wie bei jedem Abruf im Internet sieht der Anbieter deine IP-Adresse und technische Angaben deines Geräts. Gesundheitswerte, Profil, Ziele und dein Ernährungstagebuch werden nicht gesendet. Antwortet ein Modell nicht, kann dasselbe Foto an ein anderes Modell desselben Anbieters gehen.</li>
+          <li><strong>Wer es bekommt:</strong> Nur der Anbieter, den du gewählt hast, direkt von deinem iPhone. HealthUp+ bekommt und speichert das Foto nicht. In der App gespeichert wird nur das Ergebnis, wenn du es übernimmst.</li>
+          <li><strong>Zweck:</strong> Bestandteile der Mahlzeit, Menge und Nährwerte schätzen. Das Ergebnis kann falsch sein. Allergene erkennt die KI nicht. Prüfe die Werte, bevor du sie speicherst.</li>
+          <li><strong>Bitte beachten:</strong> Ein Foto deiner Mahlzeit kann etwas über deine Ernährung und Gesundheit verraten. Achte darauf, dass keine Personen, Gesichter oder privaten Dinge zu sehen sind.</li>
+        </ul>
+        <h3>9.1 Deine Einwilligung</h3>
+        <p>Bevor das erste Foto an einen Anbieter geht, fragt dich die App, ob du einverstanden bist (Knöpfe „Zustimmen und senden“ und „Abbrechen“). Du gibst die Einwilligung für jeden Anbieter einzeln. Wechselst du den Anbieter, fragt die App erneut.</p>
+        <p><strong>Rechtsgrundlage</strong> ist deine ausdrückliche Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und vorsorglich nach Art. 9 Abs. 2 lit. a DSGVO.</p>
+        <h3>9.2 Widerruf</h3>
+        <p>Du kannst deine Einwilligung jederzeit widerrufen, mit Wirkung für die Zukunft:</p>
+        <ul>
+          <li>in den Einstellungen unter Ernährung, KI-Foto-Analyse mit dem Schalter „KI-Foto-Analyse erlaubt“ für den Anbieter <!-- TODO Code: Schalter fehlt noch --></li>
+          <li>oder indem du in der App den gespeicherten Schlüssel entfernst („Gespeicherten Schlüssel aus Keychain entfernen“).</li>
+        </ul>
+        <p>Danach sendet HealthUp+ keine Fotos mehr an den Anbieter. Was der Anbieter schon erhalten hat, regeln deine Bedingungen dort.</p>
+        <h3>9.3 Drittland und Speicherdauer beim Anbieter</h3>
+        <p>Die Anbieter verarbeiten das Foto in den USA. Dort kann das Datenschutzniveau niedriger sein als in der EU. Die Übermittlung stützt sich auf den Angemessenheitsbeschluss der EU-Kommission zum EU-U.S. Data Privacy Framework (Art. 45 DSGVO), soweit der Anbieter zertifiziert ist, sonst auf die Standardvertragsklauseln des Anbieters (Art. 46 DSGVO) und deine ausdrückliche Einwilligung (Art. 49 Abs. 1 lit. a DSGVO). <!-- TODO Zertifizierung je Anbieter auf dataprivacyframework.gov prüfen und mit Datum eintragen --></p>
+        <p>Wie lange der Anbieter das Foto aufbewahrt, regelt dein Vertrag mit dem Anbieter. Die Anbieter geben für ihre Schnittstellen an, Eingaben für eine begrenzte Zeit zur Missbrauchskontrolle aufzubewahren. Details stehen in den Datenschutzbedingungen deines Anbieters.</p>
+
+        <h2 id="ki-bilder">10. KI-erstellte Bilder</h2>
+        <p>Die Rezeptbilder und Bilder auf Wissenskarten in der App sind mit KI von xAI erstellt. Sie zeigen Serviervorschläge, nicht das echte Ergebnis. Für diese Bilder werden keine Daten von dir verarbeitet. Mehr dazu unter <a href="ki-transparenz.html">KI-Transparenz</a>.</p>
+
+        <h2 id="liga">11. Liga: was öffentlich lesbar ist</h2>
+        <p>Die Liga ist freiwillig und braucht „Mit Apple anmelden“. Ohne Anmeldung funktionieren alle Scores, aber keine Liga. Die Liga-Daten liegen in der <strong>öffentlichen</strong> CloudKit-Datenbank von Apple. Öffentlich heißt: Jede Person mit einem iCloud-Konto kann diese Daten technisch lesen, nicht nur deine Mitspieler. HealthUp+ betreibt dafür keinen eigenen Server.</p>
+        <p><strong>Kurz:</strong> In der Liga sehen andere deinen Anzeigenamen (in der offenen Arena gekürzt), dein Profilbild, deinen Freundescode, deine Siege und deine Tagespunkte von 0 bis 100. Puls, HRV, Schrittzahl, Gewicht und Schlafphasen werden nie geteilt. Die vollständige Liste steht hier.</p>
+        <h3>11.1 Öffentlich lesbar</h3>
+        <ul>
+          <li><strong>Anzeigename.</strong> In der offenen Arena wird er gekürzt gespeichert (die ersten zwei Buchstaben des Vornamens und die letzten zwei des Nachnamens). In Freunde-Runden und im Profil steht er so, wie du ihn eingibst.</li>
+          <li><strong>Profilfoto</strong>, wenn du eines hochlädst</li>
+          <li><strong>Freundescode</strong></li>
+          <li><strong>Tagespunkte</strong> (0 bis 100 je Tag und Runde) und daraus die <strong>Gesamtpunkte</strong> der Runde</li>
+        </ul>
+        <p>Dazu kommen Angaben, die für die Liga technisch nötig sind und ebenfalls öffentlich lesbar sind: deine anonyme Nutzerkennung, die Zahl deiner Siege, Freundschaften, Freundschaftsanfragen und Einladungen (mit Anzeigenamen), Runden mit Titel, Zeitraum, Teilnehmern und Teams, Reaktionen auf Siege (mit gekürztem Namen) und zu jedem Tag zwei technische Marker zur Herkunft der Punkte (gemessen mit Apple Watch ja oder nein, Aufteilung auf dem Gerät geprüft ja oder nein).</p>
+        <h3>11.2 Nicht öffentlich</h3>
+        <p>Nicht hochgeladen werden: Schritte, Trainingsminuten, Schlafdauer, Herzfrequenz, HRV, Gewicht, Ernährung und alle anderen Messwerte. Auch die Aufteilung deiner Tagespunkte auf Schritte, Training und Schlaf bleibt auf deinem iPhone. Bitte beachte: Wer die <a href="community-regeln.html#punkte">Punkteregeln</a> kennt, kann aus Tagespunkten grob auf die Aktivität eines Tages schließen.</p>
+        <h3>11.3 Ausblenden</h3>
+        <p>Wen du in der Rangliste ausblendest, wird nur auf deinem Gerät gespeichert.</p>
+        <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, weil du an der Liga teilnehmen willst. Die Tagespunkte leiten sich aus Gesundheitsdaten ab, die Freigabe dafür gibst du mit der Teilnahme an der Liga (Art. 9 Abs. 2 lit. a DSGVO).</p>
+
+        <h2 id="moderation">12. Meldungen, Blockieren und Sperren</h2>
+        <p>Du kannst andere in der Liga melden, zum Beispiel wegen eines unangemessenen Profilbilds oder Namens. Die Meldung wird auf deinem Gerät verschlüsselt (HPKE), so dass nur die Moderation sie lesen kann. Die gemeldete Person erfährt nicht, wer gemeldet hat.</p>
+        <ul>
+          <li><strong>Inhalt einer Meldung:</strong> die Nutzerkennungen und Anzeigenamen von dir und der gemeldeten Person, der Grund, der Ort in der App und eine kurze Notiz (höchstens 300 Zeichen).</li>
+          <li><strong>Prüfung:</strong> Jede Meldung prüft ein Mensch. Es gibt keine automatischen Sperren. Mögliche Entscheidungen: keine Maßnahme, Profilbild entfernen, Namen durch einen neutralen Namen ersetzen (zum Beispiel „Liga-Mitglied 4821“), Konto sperren. Die Entscheidung wird digital signiert in der öffentlichen CloudKit-Datenbank abgelegt, damit die App sie umsetzen kann. Ein entferntes Foto wird über einen Fingerabdruck des Bildes wiedererkannt, damit es nicht erneut erscheint.</li>
+          <li><strong>Folgen einer Sperre:</strong> Ein gesperrtes Konto sieht in der App einen Sperrhinweis mit Kontakt zum Support, kann die Liga nicht mehr nutzen und lädt keine Punkte mehr hoch.</li>
+          <li><strong>Einspruch:</strong> per E-Mail an <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a>.</li>
+        </ul>
+        <p>Meldungen sollen nach 6 Monaten gelöscht werden. <!-- TODO Frist bestätigen --> Diese Frist ist vorgesehen, die technische Umsetzung wird noch geprüft. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und respektvollen Liga (Art. 6 Abs. 1 lit. f DSGVO). Die Regeln stehen unter <a href="community-regeln.html">Liga und Community-Regeln</a>.</p>
+
+        <h2 id="apple">13. Weitere Apple-Dienste</h2>
+        <ul>
+          <li><strong>Mit Apple anmelden:</strong> Apple gibt der App eine Kennung für dein Konto und beim ersten Mal Name und E-Mail-Adresse (auf Wunsch eine verborgene Weiterleitungsadresse). Name und E-Mail bleiben im Schlüsselbund des Geräts. Die E-Mail-Adresse wird nicht in die Liga hochgeladen. Gibt Apple keinen Namen weiter, nutzt die App den Teil der E-Mail-Adresse vor dem @ als vorläufigen Anzeigenamen. Diesen Namen kannst du im Profil ändern.</li>
+          <li><strong>iCloud privat:</strong> Auszeichnungen und Check-ins gleicht die App über dein eigenes iCloud zwischen deinen Geräten ab. Andere sehen sie nicht.</li>
+          <li><strong>Mitteilungen:</strong> Hinweise zu Liga-Ereignissen kommen über den Push-Dienst von Apple und enthalten keine Gesundheitswerte. Coaching-Hinweise erzeugt dein Gerät selbst.</li>
+          <li><strong>Game Center:</strong> Wenn du dort angemeldet bist, erscheinen deine Liga-Siege als Erfolge.</li>
+        </ul>
+        <p>Für diese Dienste gelten zusätzlich die Bedingungen und die Datenschutzerklärung von Apple.</p>
+
+        <h2 id="empfaenger">14. Empfänger und Übermittlung in Drittländer</h2>
+        <ul>
+          <li><strong>Apple</strong> (Apple Distribution International Ltd., Irland, und Apple Inc., USA): iCloud und CloudKit, Mit Apple anmelden, Push-Mitteilungen, Game Center</li>
+          <li><strong>GitHub</strong> (GitHub, Inc., USA): Hosting dieser Website, Bereitstellung von Rezepten, Rezeptbildern und Lebensmitteldatenbank</li>
+          <li><strong>Open Food Facts</strong> (Frankreich): Barcode und eingetippte Suchbegriffe der Produktsuche</li>
+          <li><strong>Dein KI-Anbieter</strong>, nur wenn du die KI-Foto-Analyse nutzt: OpenAI, xAI, Google oder Anthropic, je nach deiner Wahl, mit deinem eigenen Vertrag</li>
+          <li><strong>Moderation:</strong> Ahmet Uprak als Betreiber liest verschlüsselte Meldungen und Lebensmittelvorschläge</li>
+          <li><strong>Andere Nutzer und iCloud-Nutzer:</strong> die öffentlich lesbaren Liga-Daten aus Abschnitt 11</li>
+        </ul>
+        <p>Bei Anbietern in den USA stützt sich die Übermittlung auf das EU-U.S. Data Privacy Framework, soweit der Anbieter zertifiziert ist, oder auf Standardvertragsklauseln der EU-Kommission.</p>
+
+        <h2 id="fristen">15. Speicherdauer und Löschung</h2>
+        <ul>
+          <li><strong>Daten auf deinem Gerät:</strong> bis du sie löschst oder die App entfernst.</li>
+          <li><strong>Liga-Daten:</strong> bis du dein Konto in der App löschst. Liga-Daten von Konten, die sich nicht mehr anmelden, sollen nach 12 Monaten automatisch verfallen. <!-- TODO Frist bestätigen --> Diese Frist ist vorgesehen, die technische Umsetzung wird noch geprüft.</li>
+          <li><strong>Abgelehnte Lebensmittelvorschläge:</strong> Löschung nach 6 Monaten vorgesehen. <!-- TODO Frist bestätigen --></li>
+          <li><strong>Meldungen:</strong> Löschung nach 6 Monaten vorgesehen. <!-- TODO Frist bestätigen --></li>
+          <li><strong>E-Mails an uns:</strong> so lange, wie wir sie für deine Anfrage brauchen.</li>
+        </ul>
+        <h3>Konto löschen</h3>
+        <p>Unter Profil, Daten und Konto, „Konto löschen“ entfernst du dein Profil mit Name, Foto und Freundescode sowie offene Anfragen und Einladungen aus iCloud. Auf dem Gerät löscht die App alle gespeicherten Daten, auch das Ernährungstagebuch und Zwischenspeicher. In Runden, die schon laufen oder beendet sind, bleiben deine Tagespunkte und dein Platz stehen, damit die Rangliste für die anderen nicht umgeschrieben wird. Wenn du auch diese Einträge entfernt haben möchtest, schreib uns. Daten in Apple Health verwaltest du in der Health-App.</p>
+
+        <h2 id="rechte">16. Deine Rechte</h2>
+        <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21). Eine Einwilligung kannst du jederzeit für die Zukunft widerrufen (Art. 7 Abs. 3). Schreib dafür formlos an <a href="mailto:healthplus.support.feedback@gmail.com">healthplus.support.feedback@gmail.com</a>.</p>
+        <p>Du kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO). Für uns zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.</p>
+        <p>Es gibt keine automatisierten Entscheidungen im Sinne von Art. 22 DSGVO. Sperren entscheidet immer ein Mensch.</p>
+
+        <h2 id="alter">17. Mindestalter</h2>
+        <p>HealthUp+ und die Liga sind ab 16 Jahren. Bitte nutze die App nicht, wenn du jünger bist.</p>
+
+        <h2 id="medizin">18. Kein Medizinprodukt</h2>
+        <p>HealthUp+ hilft gesunden Erwachsenen ab 16 Jahren, Training, Erholung, Schlaf und Ernährung im Alltag einzuordnen. Die App zeigt Schätzungen aus deinen Daten in Apple Health und deinen eigenen Einträgen. HealthUp+ ist kein Medizinprodukt. Die App erkennt, überwacht, behandelt oder verhütet keine Krankheiten und ersetzt keine ärztliche Beratung. Wenn du dich krank fühlst oder Beschwerden hast, wende dich an eine Ärztin oder einen Arzt. Im Notfall ruf 112.</p>
+
+        <h2 id="aenderungen">19. Änderungen</h2>
+        <p>Wenn sich die App ändert, passen wir diese Erklärung an. Es gilt die Fassung mit dem Datum oben auf dieser Seite. Die alte Adresse <a href="HealthPlus-website.html">HealthPlus-website.html</a> leitet hierher weiter.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+    <nav aria-label="Rechtliches und Hilfe">
+      <a href="index.html">Start</a> 
+      <a href="datenschutzerklaerung.html" aria-current="page">Datenschutz</a> 
+      <a href="impressum.html">Impressum</a> 
+      <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> 
+      <a href="community-regeln.html">Liga und Community-Regeln</a> 
+      <a href="methodik.html">Methodik</a> 
+      <a href="ki-transparenz.html">KI-Transparenz</a> 
+      <a href="quellen-lizenzen.html">Quellen und Lizenzen</a> 
+      <a href="support.html">Support</a>
+    </nav>
+    <p>© 2026 Ahmet Uprak · HealthUp+ für iPhone und Apple Watch · App-Version 0.1.5</p>
+    </div>
+  </footer>
+</body>
+</html>
