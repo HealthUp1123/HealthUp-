@@ -6,15 +6,29 @@
   <title>Liga und Community-Regeln · HealthUp+</title>
   <meta name="description" content="Regeln der HealthUp+-Liga: Wochenablauf, Punkte, Gewinner, Fairness, Melden, Blockieren, Sperren und Einspruch.">
   <meta name="theme-color" content="#071433">
-  <link rel="icon" href="images/logo.jpg">
-  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="icon" href="images/app-icon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#inhalt">Zum Inhalt springen</a>
   <header class="nav">
     <div class="wrap nav-inner">
-      <a class="brand" href="index.html"><img src="images/logo.jpg" alt="" width="36" height="36">HealthUp+</a>
+      <a class="brand" href="index.html"><img src="images/app-icon.png" alt="" width="34" height="34">HealthUp+</a>
+      <details class="lang-menu">
+        <summary aria-label="Sprache wählen"><span aria-hidden="true">🌐</span> Deutsch</summary>
+        <ul>
+            <li><a href="index.html" lang="de" hreflang="de" aria-current="true">Deutsch</a></li>
+            <li><a href="en/index.html" lang="en" hreflang="en">English</a></li>
+            <li><a href="fr/index.html" lang="fr" hreflang="fr">Français</a></li>
+            <li><a href="pt-br/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
+            <li><a href="tr/index.html" lang="tr" hreflang="tr">Türkçe</a></li>
+            <li><a href="ja/index.html" lang="ja" hreflang="ja">日本語</a></li>
+            <li><a href="ko/index.html" lang="ko" hreflang="ko">한국어</a></li>
+            <li><a href="zh-hans/index.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
+            <li><a href="zh-hant/index.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li>
+        </ul>
+      </details>
       <nav class="links" aria-label="Hauptmenü">
         <a href="index.html">Start</a>
         <a href="datenschutzerklaerung.html">Datenschutz</a>
@@ -30,7 +44,7 @@
       <article class="prose">
         <p class="kicker">Liga</p>
         <h1>Liga und Community-Regeln</h1>
-        <p class="stand">Stand: 1. November 2026 · App-Version 0.1.5</p>
+        <p class="stand">Stand: 3. November 2026 · App-Version 0.1.5</p>
 
         <p>Die Liga soll Spaß machen und motivieren. Dafür gelten diese Regeln. Sie beschreiben, wie die App heute rechnet. Die Liga ist ab 16 Jahren. Derzeit trittst du der Liga ohne eigenen Einwilligungsdialog bei, und die App fragt dein Alter nicht ab. Mit dem Beitritt werden deine Tagespunkte für andere sichtbar. Mit dem nächsten App-Update bestätigst du beim Beitritt, dass du mindestens 16 bist, wählst deinen Anzeigenamen (gern ein Pseudonym) und willigst ausdrücklich ein, dass deine Tagespunkte für andere sichtbar werden. Beenden kannst du die Teilnahme jederzeit, indem du die Liga verlässt oder dein Konto löschst. <!-- UPDATE nach App-Update: Beitrittsdialog mit Einwilligung, Namenswahl und Bestätigung mindestens 16 als heute vorhanden beschreiben --></p>
 
@@ -50,23 +64,23 @@
 
         <h2 id="ablauf">1. Ablauf einer Runde</h2>
         <ul>
-          <li><strong>Arena:</strong> die offene Wochen-Runde für alle. Sie läuft von Montag 0:00 Uhr bis Sonntag 23:59 Uhr, Zeitzone Europe/Berlin. Anmelden kannst du dich bis zum Start am Montag. In der Arena wird dein Name gekürzt angezeigt.</li>
+          <li><strong>Arena:</strong> die offene Wochen-Runde für alle. Sie läuft auf deinem Gerät von Montag 0:00 Uhr bis Sonntag 24:00 Uhr deiner Ortszeit. Anmelden kannst du dich bis zum Start am Montag, ebenfalls nach deiner Ortszeit. In der Arena wird dein Name gekürzt angezeigt.</li>
           <li><strong>Freunde-Runde:</strong> sieben Tage mit Freunden. Freunde fügst du mit ihrem sechsstelligen Freundescode hinzu. Wer die Runde startet, legt fest, ob Schlaf mitzählt.</li>
           <li>Für die Liga brauchst du „Mit Apple anmelden“.</li>
         </ul>
 
         <h2 id="punkte">2. Punkte</h2>
-        <p>Pro Tag gibt es höchstens <strong>100 Punkte</strong>, pro Runde also höchstens 700. Die Punkte rechnet dein iPhone aus deinen Apple-Health-Daten.</p>
+        <p>Pro Tag gibt es in Freunde-Runden höchstens <strong>100 Punkte</strong>, pro Runde also höchstens 700. In der Arena gibt es ab der Arena-Woche 47 (16. November 2026) höchstens <strong>50 Punkte</strong> am Tag, also höchstens 350 in der Woche; frühere Arena-Wochen zählen nach den Regeln der Freunde-Runde ohne Schlaf. Die Punkte rechnet dein iPhone aus deinen Apple-Health-Daten.</p>
         <div class="table-wrap">
           <table>
             <caption>Punkte pro Tag</caption>
-            <thead><tr><th scope="col">Baustein</th><th scope="col">Arena und Freunde-Runde ohne Schlaf</th><th scope="col">Freunde-Runde mit Schlaf</th></tr></thead>
+            <thead><tr><th scope="col">Baustein</th><th scope="col">Freunde-Runde ohne Schlaf</th><th scope="col">Freunde-Runde mit Schlaf</th><th scope="col">Arena ab Woche 47</th></tr></thead>
             <tbody>
-              <tr><td>Check-in in der App</td><td>5</td><td>5</td></tr>
-              <tr><td>Schritte</td><td>bis 40 (volle Punkte bei 20.000 Schritten) und 10 Bonus</td><td>bis 40 (volle Punkte bei 30.000 Schritten)</td></tr>
-              <tr><td>Training</td><td>bis 35 (volle Punkte bei 60 Minuten) und 10 Bonus</td><td>bis 30</td></tr>
-              <tr><td>Schlaf</td><td>zählt nicht</td><td>bis 25 (volle Punkte bei 7 bis 9 Stunden)</td></tr>
-              <tr><th scope="row">Höchstens</th><td>100</td><td>100</td></tr>
+              <tr><td>Check-in in der App</td><td>5</td><td>5</td><td>5</td></tr>
+              <tr><td>Schritte</td><td>bis 40 (volle Punkte bei 20.000 Schritten) und 10 Bonus</td><td>bis 40 (volle Punkte bei 30.000 Schritten)</td><td>bis 35 (volle Punkte bei 35.000 Schritten) und 10 Bonus darüber</td></tr>
+              <tr><td>Training</td><td>bis 35 (volle Punkte bei 60 Minuten) und 10 Bonus</td><td>bis 30</td><td>zählt nicht</td></tr>
+              <tr><td>Schlaf</td><td>zählt nicht</td><td>bis 25 (volle Punkte bei 7 bis 9 Stunden)</td><td>zählt nicht</td></tr>
+              <tr><th scope="row">Höchstens</th><td>100</td><td>100</td><td>50</td></tr>
             </tbody>
           </table>
         </div>
@@ -84,7 +98,8 @@
         <ul>
           <li>Von Hand in Apple Health eingetragene Werte zählen nie.</li>
           <li>Mehr als 70.000 Schritte oder 360 Trainingsminuten an einem Tag werden auf diese Werte begrenzt.</li>
-          <li>Einträge mit mehr als 100 Punkten an einem Tag werden verworfen.</li>
+          <li>Einträge mit mehr Punkten, als ein Tag bringen kann (100, in der Arena ab Woche 47: 50), werden verworfen.</li>
+          <li>In der Arena zählen ab Woche 47 nur Punkte aus App-Versionen mit den aktuellen Punkteregeln. Bei älteren Versionen steht in der Rangliste „Update nötig“.</li>
           <li>Wer jeden Tag die Höchstpunktzahl hat, wird zur Prüfung markiert, aber nicht automatisch bestraft.</li>
           <li>Die Prüfungen laufen in der App. Sie machen Manipulation schwerer, können sie aber nicht ganz ausschließen. Bei Verdacht kannst du melden.</li>
         </ul>

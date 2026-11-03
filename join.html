@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Einladung zur HealthUp+-Liga</title>
+  <meta name="description" content="Einladung zur HealthUp+-Liga: App laden oder mit dem Liga-Code direkt in HealthUp+ öffnen.">
+  <link rel="icon" href="images/app-icon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <!--
+    Invitation page for the HealthUp+ League (Review LIG-14 = PRD-2, LIG-I1 step 1).
+    Link: join.html?code=ABC123 (six letters or digits). Static, no external scripts, no cookies, no storage, no
+    tracking. The language follows the browser; ?lang=<code> or the switcher below overrides it (kept in the URL only).
+    "In HealthUp+ öffnen" uses the app's own scheme healthplus://liga?code=…, the store button the App Store page.
+  -->
+  <style>
+    .join { max-width: 560px; margin: 0 auto; padding: 48px 0 64px; }
+    .join h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 8px 0 12px; }
+    .join .lead { color: var(--muted); font-size: 17px; margin: 0 0 24px; }
+    .code-card {
+      background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow-card);
+      padding: 24px; text-align: center; margin: 0 0 20px;
+    }
+    .code-label { color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+    .code-value {
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 700;
+      font-size: clamp(34px, 10vw, 48px); letter-spacing: .12em; color: var(--blue); margin: 8px 0 4px;
+    }
+    .actions { display: grid; gap: 12px; margin: 0 0 20px; }
+    .actions .btn, .actions button { width: 100%; justify-content: center; text-align: center; min-height: 48px; }
+    .copy {
+      font: inherit; font-weight: 600; border: 1px solid var(--line); background: transparent; color: var(--ink);
+      border-radius: 999px; padding: 12px 20px; cursor: pointer;
+    }
+    .copy:focus-visible, .btn:focus-visible, .lang select:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+    .steps { margin: 0 0 20px; padding-left: 22px; color: var(--ink); }
+    .steps li { margin: 6px 0; }
+    .note { color: var(--muted); font-size: 14px; }
+    .warn { background: rgba(240, 122, 26, .10); border-radius: 14px; padding: 12px 16px; margin: 0 0 20px; }
+    .lang { display: flex; align-items: center; gap: 8px; justify-content: flex-end; margin: 0 0 8px; color: var(--muted); font-size: 14px; }
+    .lang select { font: inherit; padding: 6px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); min-height: 44px; }
+    [hidden] { display: none !important; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><img src="images/app-icon.png" alt="" width="34" height="34">HealthUp+</a>
+    </div>
+  </header>
+
+  <main class="wrap" id="inhalt">
+    <div class="join">
+      <div class="lang">
+        <label for="lang" data-t="language">Sprache</label>
+        <select id="lang">
+          <option value="de">Deutsch</option>
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="pt-BR">Português (Brasil)</option>
+          <option value="tr">Türkçe</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="zh-Hans">简体中文</option>
+          <option value="zh-Hant">繁體中文</option>
+        </select>
+      </div>
+
+      <p class="kicker" data-t="kicker">Einladung</p>
+      <h1 data-t="title">Du bist in die HealthUp+-Liga eingeladen</h1>
+      <p class="lead" data-t="lead">Tägliche Punkte für Bewegung und Check-in, eine Rangliste mit Freunden.</p>
+
+      <section class="code-card" id="code-card" hidden>
+        <div class="code-label" data-t="codeLabel">Liga-Code</div>
+        <div class="code-value" id="code" aria-live="polite"></div>
+      </section>
+
+      <p class="warn" id="no-code" hidden data-t="noCode">In diesem Link steht kein gültiger Liga-Code. Frag nach dem sechsstelligen Code und gib ihn in der App unter Liga ein.</p>
+
+      <div class="actions">
+        <a class="btn" id="open-app" href="healthplus://liga" data-t="openApp">In HealthUp+ öffnen</a>
+        <a class="btn btn-ghost" id="store" href="https://apps.apple.com/app/id6792910243" data-t="store">Im App Store laden</a>
+        <button type="button" class="copy" id="copy" hidden data-t="copy">Code kopieren</button>
+      </div>
+
+      <ol class="steps">
+        <li data-t="step1">HealthUp+ aus dem App Store laden.</li>
+        <li data-t="step2">In der App den Tab Liga öffnen und „Mit Apple anmelden“.</li>
+        <li data-t="step3">Hier „In HealthUp+ öffnen“ tippen oder den Code eingeben.</li>
+      </ol>
+
+      <p class="note" data-t="privacy">Freunde sehen deine Punkte, wann sie zuletzt ankamen, und Fair-Play-Hinweise, nie deine Gesundheitswerte. In der Arena verraten die Punkte ungefähr deine Schritte.</p>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+    <nav aria-label="Rechtliches und Hilfe">
+      <a href="index.html">Start</a>
+      <a href="datenschutzerklaerung.html" data-t="privacyLink">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="community-regeln.html">Liga und Community-Regeln</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <p>© 2026 Ahmet Uprak · HealthUp+</p>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    "use strict";
+    var T = {
+      "de": {
+        language: "Sprache", kicker: "Einladung", title: "Du bist in die HealthUp+-Liga eingeladen",
+        lead: "Tägliche Punkte für Bewegung und Check-in, eine Rangliste mit Freunden.",
+        codeLabel: "Liga-Code",
+        noCode: "In diesem Link steht kein gültiger Liga-Code. Frag nach dem sechsstelligen Code und gib ihn in der App unter Liga ein.",
+        openApp: "In HealthUp+ öffnen", store: "Im App Store laden", copy: "Code kopieren", copied: "Kopiert",
+        step1: "HealthUp+ aus dem App Store laden.",
+        step2: "In der App den Tab Liga öffnen und „Mit Apple anmelden“.",
+        step3: "Hier „In HealthUp+ öffnen“ tippen oder den Code eingeben.",
+        privacy: "Freunde sehen deine Punkte, wann sie zuletzt ankamen, und Fair-Play-Hinweise, nie deine Gesundheitswerte. In der Arena verraten die Punkte ungefähr deine Schritte.",
+        privacyLink: "Datenschutz", pageTitle: "Einladung zur HealthUp+-Liga"
+      },
+      "en": {
+        language: "Language", kicker: "Invitation", title: "You're invited to the HealthUp+ League",
+        lead: "Daily points for movement and check-in, a leaderboard with friends.",
+        codeLabel: "League code",
+        noCode: "This link has no valid League code. Ask for the six-character code and enter it in the app under League.",
+        openApp: "Open in HealthUp+", store: "Get it on the App Store", copy: "Copy code", copied: "Copied",
+        step1: "Get HealthUp+ from the App Store.",
+        step2: "In the app, open the League tab and Sign in with Apple.",
+        step3: "Tap “Open in HealthUp+” here or enter the code.",
+        privacy: "Friends see your points, when they last arrived and fair-play notes, never your health values. In the Arena, points give a rough idea of your steps.",
+        privacyLink: "Privacy", pageTitle: "Invitation to the HealthUp+ League"
+      },
+      "fr": {
+        language: "Langue", kicker: "Invitation", title: "Une invitation vous attend dans la Ligue HealthUp+",
+        lead: "Des points chaque jour pour le mouvement et le check-in, un classement entre amis.",
+        codeLabel: "Code de Ligue",
+        noCode: "Ce lien ne contient pas de code de Ligue valide. Demandez le code à six caractères et saisissez-le dans l'app, sous Ligue.",
+        openApp: "Ouvrir dans HealthUp+", store: "Télécharger dans l'App Store", copy: "Copier le code", copied: "Copié",
+        step1: "Téléchargez HealthUp+ dans l'App Store.",
+        step2: "Dans l'app, ouvrez l'onglet Ligue et choisissez « Se connecter avec Apple ».",
+        step3: "Touchez « Ouvrir dans HealthUp+ » ici ou saisissez le code.",
+        privacy: "Vos amis voient vos points, l'heure de leur dernière arrivée et des indications de fair-play, jamais vos valeurs de santé. Dans l'Arène, les points donnent une idée approximative de vos pas.",
+        privacyLink: "Confidentialité", pageTitle: "Invitation dans la Ligue HealthUp+"
+      },
+      "pt-BR": {
+        language: "Idioma", kicker: "Convite", title: "Você recebeu um convite para a Liga HealthUp+",
+        lead: "Pontos diários por movimento e check-in, uma classificação com amigos.",
+        codeLabel: "Código da Liga",
+        noCode: "Este link não tem um código da Liga válido. Peça o código de seis caracteres e digite-o no app, em Liga.",
+        openApp: "Abrir no HealthUp+", store: "Baixar na App Store", copy: "Copiar código", copied: "Copiado",
+        step1: "Baixe o HealthUp+ na App Store.",
+        step2: "No app, abra a aba Liga e use “Iniciar Sessão com a Apple”.",
+        step3: "Toque em “Abrir no HealthUp+” aqui ou digite o código.",
+        privacy: "Os amigos veem seus pontos, quando chegaram pela última vez e avisos de fair play, nunca seus dados de saúde. Na Arena, os pontos dão uma ideia aproximada dos seus passos.",
+        privacyLink: "Privacidade", pageTitle: "Convite para a Liga HealthUp+"
+      },
+      "tr": {
+        language: "Dil", kicker: "Davet", title: "HealthUp+ Ligine davet edildin",
+        lead: "Hareket ve check-in için her gün puan, arkadaşlarınla bir sıralama.",
+        codeLabel: "Lig kodu",
+        noCode: "Bu bağlantıda geçerli bir lig kodu yok. Altı karakterlik kodu iste ve uygulamada Lig sekmesine gir.",
+        openApp: "HealthUp+'ta aç", store: "App Store'dan indir", copy: "Kodu kopyala", copied: "Kopyalandı",
+        step1: "HealthUp+'ı App Store'dan indir.",
+        step2: "Uygulamada Lig sekmesini aç ve „Apple ile Giriş Yap“ı seç.",
+        step3: "Burada „HealthUp+'ta aç“a dokun ya da kodu gir.",
+        privacy: "Arkadaşların puanlarını, en son ne zaman geldiklerini ve fair play notlarını görür; sağlık değerlerini görmez. Arena'da puanlar adımların hakkında kabaca fikir verir.",
+        privacyLink: "Gizlilik", pageTitle: "HealthUp+ Ligine davet"
+      },
+      "ja": {
+        language: "言語", kicker: "招待", title: "HealthUp+ リーグへの招待が届いています",
+        lead: "毎日の運動とチェックインでポイント。友達とランキングで競えます。",
+        codeLabel: "リーグコード",
+        noCode: "このリンクには有効なリーグコードがありません。6文字のコードを教えてもらい、アプリの「リーグ」で入力してください。",
+        openApp: "HealthUp+ で開く", store: "App Store でダウンロード", copy: "コードをコピー", copied: "コピーしました",
+        step1: "App Store から HealthUp+ をダウンロードします。",
+        step2: "アプリで「リーグ」タブを開き、「Appleでサインイン」します。",
+        step3: "ここで「HealthUp+ で開く」をタップするか、コードを入力します。",
+        privacy: "友達に見えるのはポイント、最後に届いた時刻、フェアプレーの表示で、健康データは見えません。アリーナではポイントからおおよその歩数がわかります。",
+        privacyLink: "プライバシー", pageTitle: "HealthUp+ リーグへの招待"
+      },
+      "ko": {
+        language: "언어", kicker: "초대", title: "HealthUp+ 리그에 초대받았어요",
+        lead: "움직임과 체크인으로 매일 포인트를 모으고, 친구와 순위를 겨뤄요.",
+        codeLabel: "리그 코드",
+        noCode: "이 링크에는 유효한 리그 코드가 없어요. 6자리 코드를 받아 앱의 리그 탭에서 입력하세요.",
+        openApp: "HealthUp+에서 열기", store: "App Store에서 받기", copy: "코드 복사", copied: "복사됨",
+        step1: "App Store에서 HealthUp+를 받으세요.",
+        step2: "앱에서 리그 탭을 열고 ‘Apple로 로그인’하세요.",
+        step3: "여기에서 ‘HealthUp+에서 열기’를 탭하거나 코드를 입력하세요.",
+        privacy: "친구에게는 포인트, 마지막으로 도착한 시각, 페어플레이 표시가 보여요. 건강 수치는 보이지 않아요. 아레나에서는 포인트로 걸음 수를 대략 짐작할 수 있어요.",
+        privacyLink: "개인정보 보호", pageTitle: "HealthUp+ 리그 초대"
+      },
+      "zh-Hans": {
+        language: "语言", kicker: "邀请", title: "你受邀加入 HealthUp+ 联赛",
+        lead: "运动和签到每天赢积分，和好友一起上排行榜。",
+        codeLabel: "联赛代码",
+        noCode: "这个链接里没有有效的联赛代码。请向好友索取六位代码，然后在 App 的“联赛”中输入。",
+        openApp: "在 HealthUp+ 中打开", store: "在 App Store 下载", copy: "复制代码", copied: "已复制",
+        step1: "从 App Store 下载 HealthUp+。",
+        step2: "在 App 中打开“联赛”标签页，并“通过 Apple 登录”。",
+        step3: "在这里轻点“在 HealthUp+ 中打开”，或输入代码。",
+        privacy: "好友能看到你的积分、最近一次送达的时间和公平竞赛提示，看不到健康数据。在竞技场中，积分可以大致反映你的步数。",
+        privacyLink: "隐私", pageTitle: "HealthUp+ 联赛邀请"
+      },
+      "zh-Hant": {
+        language: "語言", kicker: "邀請", title: "你受邀加入 HealthUp+ 聯賽",
+        lead: "運動和簽到每天賺分數，和好友一起上排行榜。",
+        codeLabel: "聯賽代碼",
+        noCode: "這個連結裡沒有有效的聯賽代碼。請向好友索取六位代碼，再到 App 的「聯賽」中輸入。",
+        openApp: "在 HealthUp+ 中開啟", store: "在 App Store 下載", copy: "複製代碼", copied: "已複製",
+        step1: "從 App Store 下載 HealthUp+。",
+        step2: "在 App 中打開「聯賽」標籤頁，並「使用 Apple 登入」。",
+        step3: "在這裡點一下「在 HealthUp+ 中開啟」，或輸入代碼。",
+        privacy: "好友看得到你的分數、最近一次送達的時間和公平競賽提示，看不到健康資料。在競技場中，分數可以大致反映你的步數。",
+        privacyLink: "隱私權", pageTitle: "HealthUp+ 聯賽邀請"
+      }
+    };
+    var ORDER = ["de", "en", "fr", "pt-BR", "tr", "ja", "ko", "zh-Hans", "zh-Hant"];
+
+    function pickLanguage() {
+      var params = new URLSearchParams(window.location.search);
+      var asked = params.get("lang");
+      if (asked && T[asked]) return asked;
+      var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "de"];
+      for (var i = 0; i < list.length; i++) {
+        var tag = String(list[i] || "").toLowerCase();
+        if (tag.indexOf("zh") === 0) {
+          return (tag.indexOf("hant") >= 0 || /-(tw|hk|mo)\b/.test(tag)) ? "zh-Hant" : "zh-Hans";
+        }
+        if (tag.indexOf("pt") === 0) return "pt-BR";
+        var base = tag.split("-")[0];
+        for (var j = 0; j < ORDER.length; j++) {
+          if (ORDER[j].toLowerCase() === base) return ORDER[j];
+        }
+      }
+      return "en";
+    }
+
+    var lang = pickLanguage();
+
+    function apply(code) {
+      var t = T[lang];
+      document.documentElement.lang = lang;
+      document.title = t.pageTitle;
+      var nodes = document.querySelectorAll("[data-t]");
+      for (var i = 0; i < nodes.length; i++) {
+        var key = nodes[i].getAttribute("data-t");
+        if (t[key]) nodes[i].textContent = t[key];
+      }
+      document.getElementById("lang").value = lang;
+    }
+
+    // Six letters or digits, as the app makes them (`LigaInviteLink.normalizedCode`).
+    var raw = new URLSearchParams(window.location.search).get("code") || "";
+    var code = raw.trim().toUpperCase();
+    var valid = /^[A-Z0-9]{6}$/.test(code);
+
+    if (valid) {
+      document.getElementById("code").textContent = code;
+      document.getElementById("code-card").hidden = false;
+      document.getElementById("copy").hidden = false;
+      document.getElementById("open-app").href = "healthplus://liga?code=" + encodeURIComponent(code);
+    } else {
+      document.getElementById("no-code").hidden = false;
+    }
+
+    document.getElementById("copy").addEventListener("click", function () {
+      var button = this;
+      function done() {
+        button.textContent = T[lang].copied;
+        setTimeout(function () { button.textContent = T[lang].copy; }, 1600);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(done, function () {});
+      }
+    });
+
+    document.getElementById("lang").addEventListener("change", function () {
+      if (!T[this.value]) return;
+      lang = this.value;
+      apply();
+      // The choice lives in the URL only (no cookies, no storage).
+      var params = new URLSearchParams(window.location.search);
+      params.set("lang", lang);
+      history.replaceState(null, "", window.location.pathname + "?" + params.toString());
+    });
+
+    apply();
+  })();
+  </script>
+</body>
+</html>

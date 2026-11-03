@@ -6,15 +6,29 @@
   <title>KI-Transparenz · HealthUp+</title>
   <meta name="description" content="Wo HealthUp+ KI nutzt: KI-erstellte Rezeptbilder und Rezepttexte, KI-Foto-Analyse mit eigenem Schlüssel und Berechnungen auf dem Gerät.">
   <meta name="theme-color" content="#071433">
-  <link rel="icon" href="images/logo.jpg">
-  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="icon" href="images/app-icon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#inhalt">Zum Inhalt springen</a>
   <header class="nav">
     <div class="wrap nav-inner">
-      <a class="brand" href="index.html"><img src="images/logo.jpg" alt="" width="36" height="36">HealthUp+</a>
+      <a class="brand" href="index.html"><img src="images/app-icon.png" alt="" width="34" height="34">HealthUp+</a>
+      <details class="lang-menu">
+        <summary aria-label="Sprache wählen"><span aria-hidden="true">🌐</span> Deutsch</summary>
+        <ul>
+            <li><a href="index.html" lang="de" hreflang="de" aria-current="true">Deutsch</a></li>
+            <li><a href="en/index.html" lang="en" hreflang="en">English</a></li>
+            <li><a href="fr/index.html" lang="fr" hreflang="fr">Français</a></li>
+            <li><a href="pt-br/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
+            <li><a href="tr/index.html" lang="tr" hreflang="tr">Türkçe</a></li>
+            <li><a href="ja/index.html" lang="ja" hreflang="ja">日本語</a></li>
+            <li><a href="ko/index.html" lang="ko" hreflang="ko">한국어</a></li>
+            <li><a href="zh-hans/index.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
+            <li><a href="zh-hant/index.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li>
+        </ul>
+      </details>
       <nav class="links" aria-label="Hauptmenü">
         <a href="index.html">Start</a>
         <a href="datenschutzerklaerung.html">Datenschutz</a>
@@ -30,7 +44,7 @@
       <article class="prose">
         <p class="kicker">Transparenz</p>
         <h1>KI-Transparenz</h1>
-        <p class="stand">Stand: 1. November 2026 · App-Version 0.1.5</p>
+        <p class="stand">Stand: 3. November 2026 · App-Version 0.1.5</p>
 
         <p>Hier erklären wir, wo in HealthUp+ künstliche Intelligenz (KI) steckt, nach dem Gedanken von Art. 50 der europäischen KI-Verordnung.</p>
 
@@ -59,7 +73,7 @@
           <li>Das Foto geht <strong>direkt von deinem iPhone</strong> an den Anbieter, den du gewählt hast. Es läuft nicht über uns, und wir sehen es nicht.</li>
           <li>Es geht nur los, wenn du aktiv auf Analysieren tippst.</li>
           <li>Das Ergebnis ist eine <strong>Schätzung</strong> von Zutaten, Menge und Nährwerten. Du kannst alles vor dem Speichern ändern.</li>
-          <li>Die Analyse startet nur, wenn du aktiv auf Analysieren tippst. Ab der nächsten App-Version fragt die App vor dem ersten Foto an einen Anbieter ausdrücklich nach deiner Einwilligung. Bis dahin beendest du die Übertragung, indem du den Schlüssel in den Einstellungen entfernst. <!-- UPDATE nach App-Update: Vor dem ersten Foto an einen Anbieter fragt die App nach deiner Einwilligung. Widerruf mit Schalter oder durch Entfernen des Schlüssels --></li>
+          <li>Vor dem ersten Foto an einen Anbieter fragt dich die App, ob du einverstanden bist (Knöpfe „Zustimmen und senden“ und „Abbrechen“), für jeden Anbieter einzeln. Widerrufen kannst du im Profil unter „Datenschutz &amp; Privatsphäre“ mit dem Schalter für den Anbieter oder indem du den Schlüssel entfernst.</li>
         </ul>
         <p>Details zu den Daten stehen im <a href="datenschutzerklaerung.html#ki-foto">Datenschutz</a>.</p>
 
@@ -70,7 +84,7 @@
           <li><strong>Coach:</strong> keine KI. Die Tageseinschätzung folgt festen Regeln, die wir geschrieben haben. Welche Tipps zuerst kommen, ordnet die App nach deinen Rückmeldungen (hilfreich oder nicht hilfreich) um. Kein Sprachmodell, kein freier Text.</li>
         </ul>
         <ul>
-          <li><strong>Schlafphasen:</strong> Schlafzeiten und Schlafphasen liest HealthUp+ aus Apple Health. Fehlen Phasen oder wählst du im Profil unter Schlafquelle die eigene Schätzung, berechnet die App die Phasen mit einem eigenen Modell auf dem Gerät. Diese Schätzung ist nicht klinisch geprüft. Läuft die HealthUp+ App auf deiner Apple Watch, schätzt die Watch die Phasen (Wach, Kern, Tief, REM) aus Bewegung und Puls und speichert sie in Apple Health. Mit dem nächsten App-Update entfällt das eigene Schlafmodell. Dann kommen Schlafdaten und Schlafphasen nur noch aus Apple Health. <!-- UPDATE nach App-Update: Schlaf nur aus Apple Health. Sätze zu eigener Schätzung, Schlafquelle und Watch-Phasen streichen, Text dann: Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ hat kein eigenes Schlafmodell und schätzt oder schreibt keine eigenen Schlafphasen. --></li>
+          <li><strong>Schlafphasen:</strong> Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ hat kein eigenes Schlafmodell und schätzt oder schreibt keine eigenen Schlafphasen.</li>
         </ul>
         <p>Keine dieser Berechnungen trifft Entscheidungen über dich. Es sind Orientierungswerte, keine Diagnosen. Mehr in der <a href="methodik.html">Methodik</a>.</p>
 

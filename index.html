@@ -3,124 +3,278 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HealthUp+ · Belastung, Erholung, Schlaf, Ernährung und Liga</title>
-  <meta name="description" content="HealthUp+ für iPhone und Apple Watch: Belastung, Erholung, Schlaf, Ernährung mit Rezepten und eine Liga mit Freunden. Auswertung auf dem iPhone, kein Werbe-Tracking.">
-  <meta name="theme-color" content="#071433">
-  <link rel="icon" href="images/logo.jpg">
-  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <title>HealthUp+ · Drei Ringe. Faire Liga.</title>
+  <meta name="description" content="HealthUp+ für iPhone, iPhone Duo und Apple Watch: Belastung, Erholung und Schlaf, Ernährung mit Barcode und Rezepten und eine Wochen-Liga mit Freunden. Auswertung auf dem Gerät, ohne Werbung, ohne Abo.">
+  <meta name="theme-color" content="#1a0f36">
+  <meta property="og:title" content="HealthUp+ · Drei Ringe. Faire Liga.">
+  <meta property="og:description" content="Belastung, Erholung, Schlaf, Ernährung und eine faire Liga mit Freunden. Für iPhone, iPhone Duo und Apple Watch.">
+  <meta property="og:image" content="https://healthup1123.github.io/HealthUp-/images/kopfzeile.jpg">
+  <link rel="canonical" href="https://healthup1123.github.io/HealthUp-/">
+  <link rel="alternate" hreflang="de" href="https://healthup1123.github.io/HealthUp-/">
+  <link rel="alternate" hreflang="en" href="https://healthup1123.github.io/HealthUp-/en/">
+  <link rel="alternate" hreflang="fr" href="https://healthup1123.github.io/HealthUp-/fr/">
+  <link rel="alternate" hreflang="pt-BR" href="https://healthup1123.github.io/HealthUp-/pt-br/">
+  <link rel="alternate" hreflang="tr" href="https://healthup1123.github.io/HealthUp-/tr/">
+  <link rel="alternate" hreflang="ja" href="https://healthup1123.github.io/HealthUp-/ja/">
+  <link rel="alternate" hreflang="ko" href="https://healthup1123.github.io/HealthUp-/ko/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://healthup1123.github.io/HealthUp-/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://healthup1123.github.io/HealthUp-/zh-hant/">
+  <link rel="alternate" hreflang="x-default" href="https://healthup1123.github.io/HealthUp-/">
+  <link rel="icon" href="images/app-icon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home">
   <a class="skip" href="#inhalt">Zum Inhalt springen</a>
   <header class="nav">
     <div class="wrap nav-inner">
-      <a class="brand" href="index.html"><img src="images/logo.jpg" alt="" width="36" height="36">HealthUp+</a>
+      <a class="brand" href="index.html"><img src="images/app-icon.png" alt="" width="34" height="34">HealthUp+</a>
+      <details class="lang-menu">
+        <summary aria-label="Sprache wählen"><span aria-hidden="true">🌐</span> Deutsch</summary>
+        <ul>
+            <li><a href="index.html" lang="de" hreflang="de" aria-current="true">Deutsch</a></li>
+            <li><a href="en/index.html" lang="en" hreflang="en">English</a></li>
+            <li><a href="fr/index.html" lang="fr" hreflang="fr">Français</a></li>
+            <li><a href="pt-br/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
+            <li><a href="tr/index.html" lang="tr" hreflang="tr">Türkçe</a></li>
+            <li><a href="ja/index.html" lang="ja" hreflang="ja">日本語</a></li>
+            <li><a href="ko/index.html" lang="ko" hreflang="ko">한국어</a></li>
+            <li><a href="zh-hans/index.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
+            <li><a href="zh-hant/index.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li>
+        </ul>
+      </details>
       <nav class="links" aria-label="Hauptmenü">
         <a href="index.html" aria-current="page">Start</a>
+        <a href="#duo">iPhone Duo</a>
+        <a href="#watch">Apple Watch</a>
         <a href="datenschutzerklaerung.html">Datenschutz</a>
         <a href="community-regeln.html">Liga und Regeln</a>
         <a href="methodik.html">Methodik</a>
-        <a href="ki-transparenz.html">KI-Transparenz</a>
         <a href="support.html">Support</a>
       </nav>
     </div>
   </header>
+
   <main id="inhalt">
     <section class="hero" aria-labelledby="hero-titel">
       <div class="wrap hero-grid">
         <div>
-          <p class="kicker">Für iPhone und Apple Watch</p>
-          <h1 id="hero-titel">Drei Ringe. Dein Essen. Deine Liga.</h1>
-          <p>HealthUp+ macht aus deinen Apple-Health-Daten ein klares Bild für den Tag: Belastung, Erholung und Schlaf. Dazu Ernährung mit Barcode, Rezepten und optionaler KI-Foto-Schätzung, und eine Wochen-Liga mit Freunden.</p>
+          <p class="kicker">Für iPhone, iPhone Duo und Apple Watch</p>
+          <h1 id="hero-titel">Drei Ringe.<br><span class="accent">Faire Liga.</span></h1>
+          <p>Du öffnest HealthUp+ und weißt, was dein Tag braucht: Gas geben, locker bleiben oder früher ins Bett. Dazu Ernährung mit Barcode und Rezepten und eine Wochen-Liga, in der Freunde deine Punkte sehen, nie deine Gesundheitswerte.</p>
           <div class="actions">
-            <a class="btn btn-light" href="support.html">Support</a>
-            <a class="btn btn-outline" href="datenschutzerklaerung.html">Datenschutz</a>
+            <a class="store-btn" href="https://apps.apple.com/app/id6792910243"><span class="store-logo" aria-hidden="true"></span><span><small>Laden im</small><strong>App Store</strong></span></a>
+            <a class="btn btn-outline" href="#heute">Entdecken</a>
           </div>
+          <ul class="pills" aria-label="Auf einen Blick">
+            <li>Kostenlos</li>
+            <li>Ohne Abo</li>
+            <li>Ohne Werbung</li>
+            <li>Auswertung auf dem Gerät</li>
+            <li>In 9 Sprachen</li>
+          </ul>
         </div>
         <div class="hero-phone">
-          <img src="images/heute.png" width="500" height="1084" alt="Bildschirm Heute in HealthUp+ mit den drei Ringen für Belastung, Erholung und Schlaf">
+          <img src="images/01-heute.jpg" width="644" height="1400" alt="HealthUp+ auf dem iPhone: der Tab Heute mit den drei Ringen Belastung, Erholung und Schlaf und dem Coach-Tipp">
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="heute-titel">
+    <section class="banner" aria-label="Die drei Ringe">
+      <div class="wrap banner-media">
+        <video id="kopf-video" muted loop playsinline preload="metadata" poster="images/kopfzeile.jpg" width="1920" height="823"
+               aria-label="Animation: Die drei Ringe von HealthUp+ füllen sich, daneben Erholung, Schlaf und Belastung und ein Siegertreppchen der Liga">
+          <source src="images/kopfzeile.mp4" type="video/mp4">
+          <img src="images/kopfzeile.jpg" width="2400" height="1029" alt="Die drei Ringe von HealthUp+ mit Erholung, Schlaf und Belastung, daneben ein Siegertreppchen der Liga">
+        </video>
+        <button type="button" class="video-toggle" id="kopf-toggle" hidden data-pause="Animation anhalten" data-play="Animation abspielen" aria-label="Animation anhalten"><span aria-hidden="true">❚❚</span></button>
+      </div>
+    </section>
+
+    <section class="section" id="heute" aria-labelledby="heute-titel">
       <div class="wrap">
-        <p class="kicker">Der Tag</p>
-        <h2 id="heute-titel">Orientierung statt Zahlenwand</h2>
-        <p class="sub">Die Werte entstehen auf deinem iPhone aus den Daten, die du in Apple Health freigibst. Sie sind Schätzungen zur Orientierung, keine Diagnose. Wie wir rechnen, steht in der <a href="methodik.html">Methodik</a>.</p>
-        <div class="grid-3">
-          <figure class="shot">
-            <img src="images/heute.png" width="500" height="1084" loading="lazy" alt="Bildschirm Heute mit Ringen und einem kurzen Coaching-Hinweis">
-            <figcaption><strong>Heute und Coaching</strong>Belastung, Erholung und Schlaf auf einen Blick, dazu ein kurzer Hinweis für den Tag.</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="images/schlaf.png" width="500" height="1084" loading="lazy" alt="Bildschirm Schlaf mit Schlafdauer, Schlafphasen und Pulsverlauf der Nacht">
-            <figcaption><strong>Schlaf</strong>Schlafzeiten und Schlafphasen liest HealthUp+ aus Apple Health. Fehlen Phasen oder wählst du im Profil unter Schlafquelle die eigene Schätzung, berechnet die App die Phasen mit einem eigenen Modell auf dem Gerät. Diese Schätzung ist nicht klinisch geprüft. Läuft die HealthUp+ App auf deiner Apple Watch, schätzt die Watch die Phasen (Wach, Kern, Tief, REM) aus Bewegung und Puls und speichert sie in Apple Health. Mit dem nächsten App-Update entfällt das eigene Schlafmodell. Dann kommen Schlafdaten und Schlafphasen nur noch aus Apple Health. Dazu der Pulsverlauf der Nacht. <!-- UPDATE nach App-Update: Schlaf nur aus Apple Health. Sätze zu eigener Schätzung, Schlafquelle und Watch-Phasen streichen, Text dann: Schlafdaten und Schlafphasen kommen direkt aus Apple Health. HealthUp+ hat kein eigenes Schlafmodell und schätzt oder schreibt keine eigenen Schlafphasen. --></figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="images/stress.png" width="500" height="1084" loading="lazy" alt="Bildschirm Stress mit Tageswert und Verlauf über sieben Tage">
-            <figcaption><strong>Stress-Schätzung</strong>Stress im Tagesverlauf, geschätzt von einem kleinen Modell auf dem Gerät aus Puls und HRV. Mit simulierten Daten entwickelt, nicht klinisch geprüft. Eine Schätzung, kein Messwert.</figcaption>
-          </figure>
+        <p class="kicker">Dein Tag</p>
+        <h2 id="heute-titel">Orientierung statt Zahlenwand.</h2>
+        <p class="sub">Die Werte entstehen auf deinem iPhone aus den Daten, die du in Apple Health freigibst, verglichen mit deinem eigenen Normalwert. Schätzungen zur Orientierung, keine Diagnose. Wie wir rechnen, steht in der <a href="methodik.html">Methodik</a>.</p>
+        <ul class="rings" aria-label="Die drei Ringe">
+          <li><b><span class="dot strain" aria-hidden="true"></span>Belastung</b><span>Von 0 bis 21, mit einer Zielzone für heute.</span></li>
+          <li><b><span class="dot recovery" aria-hidden="true"></span>Erholung</b><span>Aus HRV, Ruhepuls und Schlaf, gemessen an deinem eigenen Normalwert.</span></li>
+          <li><b><span class="dot sleep" aria-hidden="true"></span>Schlaf</b><span>Ein Score aus Dauer, Phasen, Durchschlafen, Effizienz und Timing.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="coach-titel">
+      <div class="wrap feature">
+        <div>
+          <p class="kicker">Coach</p>
+          <h2 id="coach-titel">Ein Tipp für deinen Tag.</h2>
+          <ul class="checks">
+            <li><strong>Ein Coach-Tipp am Tag</strong>, passend zu deiner Nacht und deiner Belastung, auf dem Gerät berechnet.</li>
+            <li><strong>Körperenergie und Stress</strong> über den ganzen Tag.</li>
+            <li><strong>Ziele</strong> für Schritte, Training und Schlaf.</li>
+            <li><strong>Kein Chat, kein Sprachmodell:</strong> jeder Satz des Coach stützt sich auf deine Werte.</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <img src="images/02-heute-ringe.jpg" width="644" height="1400" loading="lazy" alt="Heute mit den Ringen Belastung 5,0, Erholung 82 Prozent und Schlaf 81">
+          <img src="images/09-coach.jpg" width="644" height="1400" loading="lazy" alt="Der Coach erklärt seinen Tipp für den Tag aus Erholung, Nacht und Belastung">
         </div>
       </div>
     </section>
 
-    <section class="section" style="padding-top:0" aria-labelledby="koerper-titel">
+    <section class="section" aria-labelledby="schlaf-titel">
+      <div class="wrap feature flip">
+        <div>
+          <p class="kicker">Schlaf und Stress</p>
+          <h2 id="schlaf-titel">Jede Phase der Nacht. Dein Stress im Tagesverlauf.</h2>
+          <ul class="checks">
+            <li><strong>Schlaf-Score</strong> aus Dauer, Phasen, Durchschlafen, Effizienz und Timing, mit Verlauf über 7, 14 und 30 Tage.</li>
+            <li><strong>Schlafphasen kommen aus Apple Health</strong>, zum Beispiel von deiner Apple Watch. HealthUp+ hat kein eigenes Schlafmodell.</li>
+            <li><strong>Stress</strong> aus deinem Puls gegen deine eigene Basis, über den Tag gemessen. Eine Schätzung, kein Messwert.</li>
+            <li><strong>Atemübung</strong> im Takt 4-4-4-4, wenn du kurz runterkommen willst.</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <img src="images/03-schlaf.jpg" width="644" height="1400" loading="lazy" alt="Schlaf mit Score 81, Schlafphasen Wach, REM, Leicht und Tief und den Zeiten der Nacht">
+          <img src="images/04-stress.jpg" width="644" height="1400" loading="lazy" alt="Stress mit Tageswert 14, Tagesverlauf und Atemübung">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="koerper-titel">
+      <div class="wrap feature">
+        <div>
+          <p class="kicker">Körper</p>
+          <h2 id="koerper-titel">Deine Fitness im Blick.</h2>
+          <ul class="checks">
+            <li><strong>Fitnessalter</strong> als Schätzung mit Quellen, keine Diagnose und kein Laborwert.</li>
+            <li><strong>Körperzusammensetzung</strong> mit 3D-Figur.</li>
+            <li><strong>VO₂max, Formkurve und Training</strong> mit Pulszonen und Vitalwerten im Verlauf.</li>
+          </ul>
+          <p class="fine">Die Berechnungen und ihre Quellen stehen in der <a href="methodik.html">Methodik</a>.</p>
+        </div>
+        <div class="feature-media single">
+          <img src="images/05-koerper.jpg" width="644" height="1400" loading="lazy" alt="Körper mit Cardio-Fitness, Formkurve und Training der letzten sieben Tage">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="essen-titel">
+      <div class="wrap feature flip">
+        <div>
+          <p class="kicker">Ernährung</p>
+          <h2 id="essen-titel">Essen im Blick.</h2>
+          <ul class="checks">
+            <li><strong>Ernährungstagebuch</strong> mit Barcode-Scan, Suche und Lebensmitteldatenbank. <a href="quellen-lizenzen.html">Quellen</a></li>
+            <li><strong>Mahlzeiten bis zu 7 Tage im Voraus planen</strong>, Wasser im Blick, eine Serie für jeden erfassten Tag.</li>
+            <li><strong>Gesichert in deiner privaten iCloud</strong>, damit dein Tagebuch eine Neuinstallation übersteht. Nur du hast Zugriff, abschaltbar im Profil.</li>
+            <li><strong>Optional: KI-Fotoanalyse</strong> mit deinem eigenen API-Schlüssel, erst nach deiner Zustimmung. <a href="ki-transparenz.html">So funktioniert es</a></li>
+          </ul>
+          <p class="fine">Nährwerte stammen aus offenen Datenbanken und sind bei Gerichten meist geschätzt. Bei Produkten mit Barcode gelten die Angaben auf der Verpackung. Rezeptbilder und Rezepttexte sind mit KI erstellt und von uns geprüft; die Bilder zeigen Serviervorschläge.</p>
+        </div>
+        <div class="feature-media single">
+          <img src="images/06-ernaehrung.jpg" width="644" height="1400" loading="lazy" alt="Ernährung mit Kalorien, Makros und den Mahlzeiten des Tages">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="liga" aria-labelledby="liga-titel">
+      <div class="wrap feature">
+        <div>
+          <p class="kicker">Liga</p>
+          <h2 id="liga-titel">Sieben Tage mit Freunden.</h2>
+          <ul class="checks">
+            <li><strong>Runde mit Freunden:</strong> bis zu 100 Punkte am Tag aus Schritten, Training und Check-in. Ob Schlaf zählt, legt ihr beim Start fest.</li>
+            <li><strong>Arena-Woche:</strong> offen für alle, nur Check-in und Schritte, bis zu 50 Punkte am Tag, keine Apple Watch nötig.</li>
+            <li><strong>Rangliste, Revanche</strong> und über 70 Auszeichnungen zum Sammeln. Check-in-Serien bringen Auszeichnungen.</li>
+            <li><strong>Fair:</strong> andere sehen deinen Namen, dein Foto, deine Punkte und Fair-Play-Hinweise, nie deine Gesundheitswerte. In der Arena lassen die Punkte ungefähr auf deine Schritte schließen.</li>
+          </ul>
+          <p class="fine">Was in der Liga öffentlich lesbar ist, steht im <a href="datenschutzerklaerung.html#liga">Datenschutz</a>, die Regeln unter <a href="community-regeln.html">Liga und Community-Regeln</a>.</p>
+        </div>
+        <div class="feature-media single">
+          <img src="images/07-liga.jpg" width="644" height="1400" loading="lazy" alt="Liga: Woche mit Freunden mit Rangliste und Punkten">
+        </div>
+      </div>
+    </section>
+
+    <section class="section duo" id="duo" aria-labelledby="duo-titel">
       <div class="wrap">
-        <p class="kicker">Körper und Fitness</p>
-        <h2 id="koerper-titel">Trends, die du nachvollziehen kannst</h2>
-        <p class="sub">Deine Werte aus Apple Health, klar dargestellt: Vitalwerte, Fitness und Körperwerte. Dein Fitnessalter ist eine statistische Schätzung zur Motivation, kein medizinischer Wert und kein Laborwert.</p>
-        <div class="grid-2">
-          <figure class="shot">
-            <img src="images/koerper.png" width="500" height="1084" loading="lazy" alt="Bildschirm Körper mit Belastung, Erholung und Schlaf">
-            <figcaption><strong>Körper</strong>Herz, Ruhepuls, Körperzusammensetzung und Fitnessalter als Schätzung.</figcaption>
+        <p class="kicker">iPhone Duo</p>
+        <h2 id="duo-titel">Aufgeklappt: mehr Platz für deinen Tag.</h2>
+        <p class="sub">Auf dem iPhone Duo zeigt HealthUp+ Ringe, Coach, Körperenergie, Stress und Körperwerte nebeneinander. Schlaf und Stress öffnen sich neben deinem Tag, und halb aufgeklappt liegt die Atemübung über dem Knick, die Bedienung darunter.</p>
+        <div class="gallery" tabindex="0" aria-label="Bilder vom iPhone Duo, seitlich blättern">
+          <figure>
+            <img src="images/01-duo-heute.jpg" width="1800" height="1266" loading="lazy" alt="Heute auf dem aufgeklappten iPhone Duo: Ringe, Coach und Ziele links, Körperenergie, Stress-Monitor und Körperwerte rechts">
+            <figcaption>Heute: Belastung, Erholung und Schlaf nebeneinander auf einen Blick.</figcaption>
           </figure>
-          <figure class="shot">
-            <img src="images/fitness.png" width="500" height="1084" loading="lazy" alt="Übersicht mit Bewegung, Training, Schritten, VO2max, Ruhepuls, HRV und Sauerstoff">
-            <figcaption><strong>Fitness</strong>Aktive Energie, Schritte, Strecke, Sauerstoffsättigung, Atemfrequenz und VO₂max auf einen Blick.</figcaption>
+          <figure>
+            <img src="images/02-duo-schlaf.jpg" width="1800" height="1266" loading="lazy" alt="Schlaf mit Schlafphasen und Zyklen als Ansicht über dem Tag auf dem iPhone Duo">
+            <figcaption>Schlaf: Tief, Leicht, REM und Wach, Nacht für Nacht.</figcaption>
           </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top:0" aria-labelledby="ernaehrung-titel">
-      <div class="wrap">
-        <p class="kicker">Ernährung</p>
-        <h2 id="ernaehrung-titel">Essen erfassen, Rezepte entdecken</h2>
-        <div class="grid-3">
-          <article class="card"><p class="kicker">Tagebuch</p><h3>Kalorien und Makros</h3><p>Dein Ernährungstagebuch liegt nur auf deinem iPhone. Auf Wunsch schreibt HealthUp+ Nährwerte und Wasser nach Apple Health.</p></article>
-          <article class="card"><p class="kicker">Suche und Barcode</p><h3>Lebensmittel finden</h3><p>Eigene Lebensmitteldatenbank aus öffentlichen Nährwerttabellen, dazu Barcode und Suche über Open Food Facts. <a href="quellen-lizenzen.html">Quellen</a></p></article>
-          <article class="card"><p class="kicker">Optional</p><h3>KI-Foto mit deinem Schlüssel</h3><p>Mit deinem eigenen API-Schlüssel schätzt ein KI-Anbieter deiner Wahl die Nährwerte eines Fotos. <a href="ki-transparenz.html">So funktioniert es</a></p></article>
-        </div>
-        <p class="sub" style="margin-top:20px">Nährwerte stammen aus offenen Datenbanken und sind bei Gerichten meist geschätzt. Sie können von deinem Lebensmittel abweichen. Bei Produkten mit Barcode gelten die Angaben auf der Verpackung. Rezeptbilder und Rezepttexte sind mit KI erstellt und von uns geprüft. Die Bilder zeigen Serviervorschläge. Mehr dazu unter <a href="ki-transparenz.html">KI-Transparenz</a>.</p>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top:0" aria-labelledby="liga-titel">
-      <div class="wrap">
-        <p class="kicker">Liga</p>
-        <h2 id="liga-titel">Sieben Tage mit Freunden</h2>
-        <p class="sub">Gleiche Regeln für alle. Freundescode eingeben, eigene Runde starten oder jede Woche in der offenen Arena mitmachen. Andere in der Liga sehen deine Punkte als Wettkampf, nie deinen Puls, dein Gewicht oder deinen Schlaf. Was genau öffentlich lesbar ist, steht im <a href="datenschutzerklaerung.html#liga">Datenschutz</a>. Die Regeln findest du unter <a href="community-regeln.html">Liga und Community-Regeln</a>.</p>
-        <div class="grid-2">
-          <figure class="shot">
-            <img src="images/liga.png" width="500" height="1084" loading="lazy" alt="Bildschirm Liga mit Arena und Freunde-Runde">
-            <figcaption><strong>Liga und Arena</strong>Freunde-Runden und die offene Wochen-Arena.</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="images/auszeichnungen.png" width="500" height="1084" loading="lazy" alt="Bildschirm Auszeichnungen mit Ehrenstufen und Meilensteinen">
-            <figcaption><strong>Auszeichnungen</strong>Ehrenstufen von Gold bis Kronjuwel und Meilensteine.</figcaption>
+          <figure>
+            <img src="images/03-duo-stress.jpg" width="1800" height="1266" loading="lazy" alt="Stress mit Tagesverlauf und Atemübung auf dem iPhone Duo">
+            <figcaption>Stress: der Tagesverlauf aus deinem Puls, mit Atemübung.</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section class="section" style="padding-top:0" aria-labelledby="prinzip-titel">
+    <section class="section" id="watch" aria-labelledby="watch-titel">
+      <div class="wrap feature flip">
+        <div>
+          <p class="kicker">Apple Watch</p>
+          <h2 id="watch-titel">Auch am Handgelenk.</h2>
+          <ul class="checks">
+            <li><strong>Ringe, Coach-Tipp, Liga-Platz und Check-in</strong> direkt auf der Uhr.</li>
+            <li><strong>Training mit Pulszonen</strong> und die Atemübung am Handgelenk.</li>
+            <li><strong>Komplikationen</strong> für dein Zifferblatt.</li>
+            <li><strong>Mit deiner Erlaubnis</strong> speichert die Watch Workouts und Achtsamkeitsminuten in Apple Health.</li>
+          </ul>
+          <p class="fine">Die App für die Apple Watch braucht watchOS 26.</p>
+        </div>
+        <div class="feature-media single">
+          <img src="images/10-watch.jpg" width="644" height="1400" loading="lazy" alt="HealthUp+ auf der Apple Watch mit den Ringen Belastung, Erholung und Schlaf">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="dabei-titel">
+      <div class="wrap feature">
+        <div>
+          <p class="kicker">Immer dabei</p>
+          <h2 id="dabei-titel">Deine Woche als Bericht.</h2>
+          <div class="tiles">
+            <article class="tile"><h3>Widgets</h3><p>Ringe, Coach und Liga, auch auf dem Sperrbildschirm.</p></article>
+            <article class="tile"><h3>Kontrollzentrum</h3><p>Check-in, Atemübung und Arena mit einem Tipp.</p></article>
+            <article class="tile"><h3>Siri</h3><p>Sagt dir, wie dein Tag aussieht.</p></article>
+            <article class="tile"><h3>Wochenbericht</h3><p>Mit einem Bild zum Teilen.</p></article>
+            <article class="tile"><h3>Export</h3><p>Als PDF, CSV und JSON.</p></article>
+            <article class="tile"><h3>9 Sprachen</h3><p>Deutsch · English · Français · Português (Brasil) · Türkçe · 日本語 · 한국어 · 简体中文 · 繁體中文</p></article>
+          </div>
+        </div>
+        <div class="feature-media single">
+          <img src="images/08-profil.jpg" width="644" height="1400" loading="lazy" alt="Profil mit Körperprofil, Zielen, Auszeichnungen und Wochenbericht">
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" aria-labelledby="cta-titel">
+      <div class="wrap cta-inner">
+        <img src="images/app-icon.png" width="96" height="96" alt="" loading="lazy">
+        <h2 id="cta-titel">Jetzt kostenlos laden.</h2>
+        <p class="sub">Für iPhone mit iOS 26. Die App für die Apple Watch braucht watchOS 26.</p>
+        <a class="store-btn" href="https://apps.apple.com/app/id6792910243"><span class="store-logo" aria-hidden="true"></span><span><small>Laden im</small><strong>App Store</strong></span></a>
+      </div>
+    </section>
+
+    <section class="section privacy-band" aria-labelledby="prinzip-titel">
       <div class="wrap">
         <p class="kicker">Datenschutz</p>
-        <h2 id="prinzip-titel">So gehen wir mit deinen Daten um</h2>
+        <h2 id="prinzip-titel">Deine Gesundheit ist unverkäuflich.</h2>
         <div class="grid-3">
-          <article class="card"><h3>Auswertung auf dem iPhone</h3><p>Keine eigenen Server. Deine Gesundheitswerte werden auf deinem iPhone berechnet.</p></article>
-          <article class="card"><h3>Ohne Tracking. Ohne Werbung.</h3><p>Keine Analysedienste Dritter, kein Verkauf von Daten. Deine Gesundheit ist dein intimstes Gut und unverkäuflich.</p></article>
+          <article class="card"><h3>Auswertung auf dem Gerät</h3><p>Keine eigenen Server. Scores, Coach und Modelle laufen auf deinem iPhone und deiner Apple Watch.</p></article>
+          <article class="card"><h3>Ohne Tracking, ohne Werbung</h3><p>Keine Analysedienste Dritter, kein Verkauf von Daten.</p></article>
           <article class="card"><h3>Offen erklärt</h3><p>Welche Dienste die App nutzt (Apple iCloud, GitHub, Open Food Facts, optional dein KI-Anbieter), steht in der <a href="datenschutzerklaerung.html">Datenschutzerklärung</a>.</p></article>
         </div>
         <div class="note warn" style="margin-top:24px">
@@ -129,21 +283,43 @@
       </div>
     </section>
   </main>
+
   <footer class="site">
     <div class="wrap">
     <nav aria-label="Rechtliches und Hilfe">
-      <a href="index.html" aria-current="page">Start</a> 
-      <a href="datenschutzerklaerung.html">Datenschutz</a> 
-      <a href="impressum.html">Impressum</a> 
-      <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> 
-      <a href="community-regeln.html">Liga und Community-Regeln</a> 
-      <a href="methodik.html">Methodik</a> 
-      <a href="ki-transparenz.html">KI-Transparenz</a> 
-      <a href="quellen-lizenzen.html">Quellen und Lizenzen</a> 
+      <a href="index.html" aria-current="page">Start</a>
+      <a href="datenschutzerklaerung.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+      <a href="community-regeln.html">Liga und Community-Regeln</a>
+      <a href="methodik.html">Methodik</a>
+      <a href="ki-transparenz.html">KI-Transparenz</a>
+      <a href="quellen-lizenzen.html">Quellen und Lizenzen</a>
       <a href="support.html">Support</a>
     </nav>
-    <p>© 2026 Ahmet Uprak · HealthUp+ für iPhone und Apple Watch · App-Version 0.1.5</p>
+    <p><a href="https://apps.apple.com/app/id6792910243">HealthUp+ im App Store</a></p>
+    <p>© 2026 Ahmet Uprak · HealthUp+ für iPhone, iPhone Duo und Apple Watch · App-Version 0.1.5 · iOS 26 und watchOS 26</p>
     </div>
   </footer>
+  <script>
+    // Kopfvideo: spielt nur, wenn "Bewegung reduzieren" aus ist, und laesst sich jederzeit anhalten (WCAG 2.2.2).
+    (function () {
+      var v = document.getElementById("kopf-video"), b = document.getElementById("kopf-toggle");
+      if (!v || !b) return;
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      function show(playing) {
+        b.setAttribute("aria-label", playing ? b.dataset.pause : b.dataset.play);
+        b.firstElementChild.textContent = playing ? "❚❚" : "▶";
+      }
+      b.hidden = false;
+      b.addEventListener("click", function () {
+        if (v.paused) { v.play(); show(true); } else { v.pause(); show(false); }
+      });
+      if (reduce) { show(false); return; }
+      var p = v.play();
+      if (p && p.catch) p.catch(function () { show(false); });
+      show(true);
+    })();
+  </script>
 </body>
 </html>
