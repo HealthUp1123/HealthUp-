@@ -7,6 +7,7 @@
 :root {
   --navy: #160f2a;
   --ink: #160f2a;
+  --focus: #9a5300;
   --text: #2b2541;
   --muted: #565070;
   --line: rgba(22, 15, 42, 0.12);
@@ -28,6 +29,7 @@
   :root {
     --navy: #0d0919;
     --ink: #f3effc;
+    --focus: #f0a020;
     --text: #dcd6ee;
     --muted: #aaa3c4;
     --line: rgba(255, 255, 255, 0.12);
@@ -55,7 +57,7 @@ body {
 
 a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
 a:hover { text-decoration-thickness: 2px; }
-a:focus-visible, .btn:focus-visible, button:focus-visible { outline: 3px solid #f0a020; outline-offset: 2px; border-radius: 6px; }
+a:focus-visible, .btn:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 6px; }
 
 img { max-width: 100%; height: auto; display: block; }
 

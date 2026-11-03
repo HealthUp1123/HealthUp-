@@ -61,7 +61,7 @@
         <nav class="toc" aria-label="Inhalt dieser Seite">
           <strong>Inhalt</strong>
           <ol>
-            <li><a href="#erholung">Erholung und Bereitschaft</a></li>
+            <li><a href="#erholung">Erholung</a></li>
             <li><a href="#belastung">Belastung und Körperenergie</a></li>
             <li><a href="#schlaf">Schlaf</a></li>
             <li><a href="#stress">Stress und Vitalwerte</a></li>
@@ -71,15 +71,13 @@
           </ol>
         </nav>
 
-        <h2 id="erholung">1. Erholung und Bereitschaft</h2>
+        <h2 id="erholung">1. Erholung</h2>
         <h3>Erholung (0 bis 100) <span class="tag tag-own">Eigenentwicklung</span></h3>
         <p>Gewichteter Mittelwert aus vier Teilen: Schlaf 36 %, HRV 38 %, Ruhepuls 18 %, Belastung vom Vortag 8 %. Fehlt ein Teil, werden die anderen höher gewichtet. Es gibt einen kleinen Bonus, wenn Schlaf und HRV beide sehr gut sind, und einen Abzug, wenn Schlaf und Ruhepuls beide schwach sind. Die Erholung wird nur nach einer Nacht mit mindestens 2,5 Stunden Schlaf berechnet. Ab 70 gilt sie als gut, ab 45 als mittel.</p>
         <h3>HRV-Teil <span class="tag tag-mix">angelehnt</span></h3>
         <p>Wir vergleichen den Logarithmus deiner HRV der letzten 7 Nächte mit deiner eigenen Basis aus 30 Nächten (mindestens 7 Nächte). Die Idee, HRV als gleitenden Mittelwert gegen die persönliche Basis zu lesen, stammt aus der Sportwissenschaft (Plews et al. 2013, Buchheit 2014). Mischung und Skala sind eigene Setzungen. Apple Watch misst meist SDNN, nicht RMSSD. Beide Verfahren mischen wir nie.</p>
         <h3>Ruhepuls-Teil <span class="tag tag-own">Eigenentwicklung</span></h3>
         <p>Abweichung des Ruhepulses von deiner Basis, linear in Punkte umgerechnet.</p>
-        <h3>Bereitschaft <span class="tag tag-own">Eigenentwicklung</span></h3>
-        <p>Der große Wert auf dem Startbildschirm: Erholung 48 %, Schlafscore der Nacht 34 %, Belastung des Tages 18 %. Er wird morgens festgelegt, damit er sich über den Tag nicht ständig ändert. Nach weniger als 7 Nächten mit HRV zeigt die App einen Hinweis auf geringe Sicherheit.</p>
 
         <h2 id="belastung">2. Belastung und Körperenergie</h2>
         <h3>Belastung aus Herzfrequenz (0 bis 21) <span class="tag tag-mix">angelehnt</span></h3>
@@ -104,9 +102,9 @@
 
         <h2 id="stress">4. Stress und Vitalwerte</h2>
         <h3>Stress-Tageswert <span class="tag tag-own">Eigenentwicklung</span></h3>
-        <p>Eine Schätzung aus Erholung, Belastung, HRV und Ruhepuls im Vergleich zu deiner Basis, auf einer Skala von 8 bis 88. Im Tagesverlauf nutzt die App den Puls über Ruhe in 15-Minuten-Blöcken und lässt Schlaf, Training und Gehen weg. Der Wert ist nicht validiert und misst keinen Stress, sondern schätzt ihn. Den Stressverlauf über den Tag schätzt ein kleines Modell auf dem Gerät. Wir haben es mit simulierten Daten entwickelt, nicht mit echten Messungen von Menschen unter Stress. Es ist nicht klinisch geprüft. Der Wert beschreibt eine körperliche Anspannung aus Puls und HRV. Er sagt nichts über deine Gefühle oder deine Stimmung.</p>
+        <p>Der Tageswert ist der Mittelwert des gemessenen Tagesverlaufs: Die App nutzt den Puls über deinem Ruhepuls im Verhältnis zur Herzfrequenzreserve, in 15-Minuten-Blöcken, und lässt Schlaf, Training und Gehen weg; eine HRV-Messung im Block verschiebt den Wert gegenüber deiner HRV-Basis. Wo es keinen gemessenen Verlauf gibt (ältere Tage), bleibt eine Schätzung aus Erholung, Belastung, HRV und Ruhepuls im Vergleich zu deiner Basis. Der Wert ist nicht validiert und misst keinen Stress, sondern schätzt ihn. Den Stressverlauf über den Tag schätzt ein kleines Modell auf dem Gerät. Wir haben es mit simulierten Daten entwickelt, nicht mit echten Messungen von Menschen unter Stress. Es ist nicht klinisch geprüft. Der Wert beschreibt eine körperliche Anspannung aus Puls und HRV. Er sagt nichts über deine Gefühle oder deine Stimmung.</p>
         <h3>Persönlicher Normbereich <span class="tag tag-own">Eigenentwicklung</span></h3>
-        <p>Für Vitalwerte zeigt die App deinen üblichen Bereich: Mittelwert plus oder minus 1,5 Standardabweichungen, mindestens 3 Messwerte.</p>
+        <p>Für Vitalwerte zeigt die App deinen üblichen Bereich: Mittelwert plus oder minus 1,5 Standardabweichungen, mindestens 7 Messwerte.</p>
         <h3>Puls-Erholung nach einer Minute <span class="tag tag-lit">literaturbasiert</span></h3>
         <p>Wie schnell dein Puls in der ersten Minute nach Belastung sinkt, vergleicht die App mit deinen eigenen früheren Werten. Als Orientierung nutzen wir die Studie von Cole et al. 1999. Die App bewertet daraus kein Risiko und stellt keinen Befund.</p>
         <h3>Fitness-Stufe aus VO₂max <span class="tag tag-lit">literaturbasiert</span></h3>
